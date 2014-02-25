@@ -4,7 +4,7 @@ Based on Sengoku
 Compatible Mods: NB+, TrueMute
 Recommended DLC: Mongol Face Pack
 
-Special thanks to: nekoxidion, for graphics
+Special thanks to: nekoxidion
 
 *****************
 * General Notes *

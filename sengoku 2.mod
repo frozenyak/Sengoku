@@ -1,4 +1,4 @@
-name = "Sengoku [Required] Version 2.03a"
+name = "Sengoku [Required] Version 2.04"
 path = "mod/sengoku 2"
 user_dir = "sengoku"
 
