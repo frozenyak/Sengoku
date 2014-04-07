@@ -70,6 +70,10 @@ job_marshal = {
 						liege = { religion = cathar }
 					}
 				}
+				OR = {
+					NOT = { religion = hindu }
+					trait = kshatriya
+				}
 				is_adult = yes
 			}
 			has_character_flag = special_marshal
@@ -77,6 +81,7 @@ job_marshal = {
 		
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
 	}
 	
 	gain_effect = {
@@ -107,6 +112,13 @@ job_treasurer = {
 			AND = {
 				OR = {
 					is_female = no
+					liege = { 
+						OR = {
+							mother = { character = FROM }
+							spouse = { character = FROM }
+						}
+						culture_group = asian
+					}
 					AND = {
 						religion = cathar
 						liege = { religion = cathar }
@@ -118,6 +130,7 @@ job_treasurer = {
 		}
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
 		remove_opinion = { who = FROM modifier = opinion_fired_from_council }
@@ -151,6 +164,7 @@ job_spymaster = {
 							mother = { character = FROM }
 							spouse = { character = FROM }
 						}
+						NOT = { culture_group = asian }
 					}
 					AND = {
 						religion_group = pagan_group
@@ -170,6 +184,7 @@ job_spymaster = {
 		
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
 		remove_opinion = { who = FROM modifier = opinion_fired_from_council }
@@ -212,6 +227,10 @@ job_spiritual = {
 						NOT = { religion = tengri_pagan_reformed}
 					}
 					religion = cathar
+				}
+				OR = {
+					NOT = { religion = hindu }
+					trait = brahmin
 				}
 			}
 			has_character_flag = special_spiritual

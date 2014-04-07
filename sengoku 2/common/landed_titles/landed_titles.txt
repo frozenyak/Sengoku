@@ -444,7 +444,9 @@ e_japan = {
 				b_kadono_castle = {  }
 				b_kadono_city = { }
 				b_kadono_temple = { }
-				b_chrysanthemum_throne = { }
+				b_chrysanthemum_throne = {
+					used_for_dynasty_names = no
+				}
 				color = { 140 42 160 }
 			}
 			c_kii = {
@@ -794,7 +796,11 @@ e_japan = {
 			c_izumo = {
 				b_izumo_castle = {  }
 				b_izumo_city = { }
-				b_izumo_temple = { }
+				b_izumo_temple = { 
+					holy_site = shinto
+					holy_site = buddhism
+					holy_site = pure_land_buddhism
+				}
 				color = { 160 124 18 }
 			}
 			c_ohara = {
@@ -1060,7 +1066,11 @@ e_japan = {
 			c_saeki = {
 				b_saeki_castle = {  }
 				b_saeki_city = { }
-				b_saeki_temple = { }
+				b_saeki_temple = { 
+					holy_site = shinto
+					holy_site = buddhism
+					holy_site = pure_land_buddhism
+				}
 				b_hiroshima = { }
 				color = { 96 44 23 }
 			}
@@ -2120,13 +2130,21 @@ e_japan = {
 			c_mie = {
 				b_mie_castle = {  }
 				b_mie_city = { }
-				b_mie_temple = { }
+				b_mie_temple = { 
+					holy_site = shinto
+					holy_site = buddhism
+					holy_site = pure_land_buddhism
+				}
 				color = { 68 34 32 }
 			}
 			c_watarai = {
 				b_watarai_castle = {  }
 				b_watarai_city = { }
-				b_watarai_temple = { }
+				b_watarai_temple = { 
+					holy_site = shinto
+					holy_site = buddhism
+					holy_site = pure_land_buddhism
+				}
 				color = { 60 163 64 }
 			}
 		}

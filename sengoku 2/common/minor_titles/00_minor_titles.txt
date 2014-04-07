@@ -18,6 +18,7 @@
 title_regent = {
 	realm_in_name = yes
 	dignity = 0.9
+	revoke_allowed = no
 	
 	monthly_salary = 0.1
 	monthly_prestige = 0.02
@@ -35,6 +36,7 @@ title_ruler_consort = {
 	show_as_title = yes
 	realm_in_name = yes
 	spouse_context = yes # Title name as if the other gender version of the spouse's ruler title
+	revoke_allowed = no
 	
 	monthly_salary = 0.1
 	monthly_prestige = 0.02
@@ -52,6 +54,7 @@ title_tanist = {
 	dignity = 0.86
 	show_as_title = yes
 	realm_in_name = yes
+	revoke_allowed = no
 	
 	monthly_salary = 0.07
 	monthly_prestige = 0.02
@@ -68,6 +71,7 @@ title_queen_mother = {
 	dignity = 0.85
 	show_as_title = yes
 	realm_in_name = yes
+	revoke_allowed = no
 	
 	monthly_salary = 0.05
 	monthly_prestige = 0.01
@@ -84,6 +88,7 @@ title_prince = {
 	dignity = 0.8
 	show_as_title = yes
 	realm_in_name = yes
+	revoke_allowed = no
 	
 	monthly_salary = 0.05
 	monthly_prestige = 0.01
@@ -100,6 +105,7 @@ title_prince = {
 title_courtesan = {
 	dignity = 0.05
 	realm_in_name = yes
+	revoke_allowed = no
 	
 	monthly_salary = 0.02
 	monthly_prestige = 0.01
@@ -204,9 +210,12 @@ title_court_jester = {
 					tier = emperor
 				}
 			}
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = zoroastrian_group }
-			NOT = { religion_group = taoic_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = pagan_group
+				religion_group = indian_group
+			}
 		}
 		NOT = { has_minor_title = title_keeper_of_swans }
 		NOT = { has_minor_title = title_master_of_the_horse }
@@ -214,6 +223,11 @@ title_court_jester = {
 		NOT = { has_minor_title = title_high_almoner }
 		NOT = { has_minor_title = title_cupbearer }
 		NOT = { has_minor_title = title_seneschal }
+		NOT = { has_minor_title = title_master_of_the_royal_elephants }
+		NOT = { has_minor_title = title_court_poet_india }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_royal_builder }
+		NOT = { has_character_flag = guru }
 	}
 	
 	gain_effect = {
@@ -245,10 +259,10 @@ title_keeper_of_swans = {
 				}
 			}
 			NOT = { culture_group = byzantine }
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = pagan_group }
-			NOT = { religion_group = zoroastrian_group }
-			NOT = { religion_group = taoic_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+			}
 		}
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_master_of_the_horse }
@@ -281,10 +295,10 @@ title_master_of_the_horse = {
 		FROM = {
 			is_feudal = yes
 			NOT = { culture_group = byzantine }
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = pagan_group }
-			NOT = { religion_group = zoroastrian_group }
-			NOT = { religion_group = taoic_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+			}
 		}
 		
 		NOT = { has_minor_title = title_court_jester }
@@ -318,10 +332,11 @@ title_master_of_the_hunt = {
 		FROM = {
 			is_feudal = yes
 			NOT = { culture_group = byzantine }
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = pagan_group }
-			NOT = { religion_group = zoroastrian_group }
-			NOT = { religion_group = taoic_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = indian_group
+			}
 		}
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_keeper_of_swans }
@@ -329,6 +344,11 @@ title_master_of_the_hunt = {
 		NOT = { has_minor_title = title_high_almoner }
 		NOT = { has_minor_title = title_cupbearer }
 		NOT = { has_minor_title = title_seneschal }
+		NOT = { has_minor_title = title_master_of_the_royal_elephants }
+		NOT = { has_minor_title = title_court_poet_india }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_royal_builder }
+		NOT = { has_character_flag = guru }
 	}
 	
 	gain_effect = {
@@ -353,10 +373,10 @@ title_high_almoner = {
 		FROM = {
 			is_feudal = yes
 			NOT = { culture_group = byzantine }
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = pagan_group }
-			NOT = { religion_group = zoroastrian_group }
-			NOT = { religion_group = taoic_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+			}
 		}
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_keeper_of_swans }
@@ -396,6 +416,12 @@ title_cupbearer = {
 		NOT = { has_minor_title = title_master_of_the_hunt }
 		NOT = { has_minor_title = title_high_almoner }
 		NOT = { has_minor_title = title_seneschal }
+		NOT = { has_minor_title = title_master_of_the_royal_elephants }
+		NOT = { has_minor_title = title_court_poet }
+		NOT = { has_minor_title = title_court_poet_india }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_royal_builder }
+		NOT = { has_character_flag = guru }
 	}
 	
 	gain_effect = {
@@ -427,10 +453,11 @@ title_seneschal = {
 				}
 			}
 			NOT = { culture_group = byzantine }
-			NOT = { religion_group = pagan_group }
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = zoroastrian_group }
-			NOT = { religion_group = taoic_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = indian_group
+			}
 		}
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_keeper_of_swans }
@@ -438,6 +465,11 @@ title_seneschal = {
 		NOT = { has_minor_title = title_master_of_the_hunt }
 		NOT = { has_minor_title = title_high_almoner }
 		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_master_of_the_royal_elephants }
+		NOT = { has_minor_title = title_court_poet_india }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_royal_builder }
+		NOT = { has_character_flag = guru }
 	}
 	
 	gain_effect = {
@@ -481,8 +513,11 @@ title_despot = {
 		FROM = {
 			is_feudal = yes
 			culture_group = byzantine
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = zoroastrian_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = pagan_group
+			}
 		}
 		NOT = { has_minor_title = title_sebastokrator }
 		NOT = { has_minor_title = title_caesar }
@@ -511,8 +546,11 @@ title_sebastokrator = {
 		FROM = {
 			is_feudal = yes
 			culture_group = byzantine
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = zoroastrian_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = pagan_group
+			}
 		}
 		NOT = { has_minor_title = title_despot }
 		NOT = { has_minor_title = title_caesar }
@@ -540,8 +578,11 @@ title_caesar = {
 		FROM = {
 			is_feudal = yes
 			culture_group = byzantine
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = zoroastrian_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = pagan_group
+			}
 		}
 		NOT = { has_minor_title = title_despot }
 		NOT = { has_minor_title = title_sebastokrator }
@@ -571,8 +612,11 @@ title_kouropalates = {
 		FROM = {
 			is_feudal = yes
 			culture_group = byzantine
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = zoroastrian_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = pagan_group
+			}
 		}
 		NOT = { has_minor_title = title_despot }
 		NOT = { has_minor_title = title_sebastokrator }
@@ -601,8 +645,11 @@ title_anthypatos = {
 		FROM = {
 			is_feudal = yes
 			culture_group = byzantine
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = zoroastrian_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = pagan_group
+			}
 		}
 	}
 	
@@ -628,8 +675,11 @@ title_imperial_eunuch = {
 		trait = eunuch
 		FROM = {
 			is_feudal = yes
-			NOT = { religion_group = muslim }
-			NOT = { religion_group = zoroastrian_group }
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = pagan_group
+			}
 			tier = emperor
 			culture_group = byzantine
 		}
@@ -742,6 +792,7 @@ title_court_musician = {
 			is_feudal = yes
 			OR = {
 				religion_group = muslim
+				religion_group = indian_group
 				religion_group = taoic_group
 			}
 		}
@@ -752,6 +803,13 @@ title_court_musician = {
 		NOT = { has_minor_title = title_chief_architect }
 		NOT = { has_minor_title = title_cupbearer }
 		NOT = { has_minor_title = title_chief_qadi }
+		NOT = { has_minor_title = title_master_of_the_royal_elephants }
+		NOT = { has_minor_title = title_court_poet }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_seneschal }
+		NOT = { has_minor_title = title_royal_builder }
+		NOT = { has_minor_title = title_court_poet_india }
 	}
 	
 	gain_effect = {
@@ -1795,3 +1853,151 @@ title_kundur = {
 
 	message = yes
 }
+
+# INDIAN TITLES
+
+title_master_of_the_royal_elephants = {
+	dignity = 0.06
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.02
+	monthly_prestige = 0.004
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { culture_group = byzantine }
+			religion_group = indian_group
+		}
+		
+		NOT = { has_minor_title = title_court_poet_india }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_master_of_the_hunt }
+		NOT = { has_minor_title = title_royal_builder }
+		NOT = { has_minor_title = title_seneschal }
+		NOT = { has_character_flag = guru }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_royal_builder = {
+	dignity = 0.03
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.02
+	monthly_prestige = 0.004
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			#OR = {
+				religion_group = indian_group
+			#	religion_group = taoic_group
+			#}
+		}
+		NOT = { has_minor_title = title_master_of_the_royal_elephants }
+		NOT = { has_minor_title = title_court_poet_india }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_master_of_the_hunt }
+		NOT = { has_minor_title = title_seneschal }
+		NOT = { has_character_flag = guru }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_court_poet_india = {
+	dignity = 0.05
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	
+	monthly_salary = 0.02
+	monthly_prestige = 0.004
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			religion_group = indian_group
+		}
+		NOT = { has_minor_title = title_master_of_the_royal_elephants }
+		NOT = { has_minor_title = title_royal_builder }
+		NOT = { has_minor_title = title_court_musician }
+		NOT = { has_minor_title = title_cupbearer }
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_master_of_the_hunt }
+		NOT = { has_minor_title = title_seneschal }
+		NOT = { has_character_flag = guru }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_guru = {
+	dignity = 0.050
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.02
+	monthly_prestige = 0.1
+	
+	allow = {
+		OR = {
+			has_character_flag = guru
+			has_character_flag = fake_guru
+		}
+		is_adult = yes
+		religion_group = indian_group
+		FROM = { religion_group = indian_group }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+

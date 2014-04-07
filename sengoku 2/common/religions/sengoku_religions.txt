@@ -2,70 +2,92 @@ taoic_group = { # Yellow, red, purple
 	has_coa_on_barony_only = no
 	graphical_culture = muslimgfx
 	playable = yes
-	pacifist = yes # Will make Hordes lose their super aggressiveness
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	
+	ai_convert_same_group = 0 # never try to convert
+	ai_convert_other_group = 1 # try to convert if ai_zeal is high
 
 	buddhism = {
-		graphical_culture = muslimgfx
+		graphical_culture = buddhistgfx
+		secondary_event_pictures = sunni
 		
 		icon = 40
-		heresy_icon = 42
+		heresy_icon = 41
 
 		color = { 0.8 0.8 0 }
-
-		scripture_name = BUDDHISM_SCRIPT
+		
 		crusade_name = "HOLY_WAR"
 
 		god_names = {
-			GOD_BUDDHA GOD_BODHISATTVAS GOD_THE_ANCESTORS
+			#GOD_BUDDHA GOD_BODHISATTVAS GOD_THE_ANCESTORS
+			GOD_THE_BUDDHA GOD_THE_ARHAT GOD_THE_PERFECTED_ONES
 		}
 
 		evil_god_names = {
-			BUDDHISM_MARA THE_ASURAS
+			THE_ASURAS #BUDDHISM_MARA
+			MARA
+		}
+		
+		character_modifier = {
+			learning = 4
 		}
 
+		has_heir_designation = yes
 		can_grant_divorce = yes
 		priests_can_marry = yes
 		can_hold_temples = yes
-		max_wives = 3
+		max_consorts = 3
 
 		can_retire_to_monastery = yes
+		#feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
 		female_temple_holders = yes
 		matrilineal_marriages = no
 
-		religious_clothing_head = 9
-		religious_clothing_priest = 9
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = THE_BUDDHACAVANA #BUDDHISM_SCRIPT
+		priest_title = BHIKKHU
+		piety_name = KARMA
 
 		intermarry = shinto
 	}
 
 	pure_land_buddhism = { #amidism
-		graphical_culture = muslimgfx
+		graphical_culture = buddhistgfx
+		secondary_event_pictures = sunni
 		
 		icon = 40
-		heresy_icon = 42
+		heresy_icon = 41
 
 		color = { 0.8 0 0 }
 
 		parent = buddhism
 
+		has_heir_designation = yes
 		can_grant_divorce = yes
 		priests_can_marry = yes
 		can_hold_temples = yes
-		max_wives = 3
+		max_consorts = 3
 
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
 		matrilineal_marriages = no
 
-		religious_clothing_head = 9
-		religious_clothing_priest = 9
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 	}
 
 	shinto = {
-		graphical_culture = muslimgfx
+		graphical_culture = buddhistgfx
+		secondary_event_pictures = sunni
 		
-		icon = 41
-		heresy_icon = 43
+		icon = 48
+		heresy_icon = 49
 
 		color = { 0.42 0.09 0.58 }
 
@@ -76,14 +98,26 @@ taoic_group = { # Yellow, red, purple
 			GOD_KAMI GOD_AMATERASU GOD_THE_ANCESTORS
 		}
 
+		evil_god_names = {
+			THE_ASURAS #BUDDHISM_MARA
+			MARA
+		}
+		
+		character_modifier = {
+			learning = 4
+		}
+
+		has_heir_designation = yes
 		can_grant_divorce = yes
 		priests_can_marry = yes
 		can_hold_temples = yes
-		max_wives = 3
+		max_consorts = 3
 
 		can_retire_to_monastery = yes
 		female_temple_holders = yes
 		matrilineal_marriages = no
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
 
 		religious_clothing_head = 9
 		religious_clothing_priest = 9
