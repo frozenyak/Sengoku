@@ -29,6 +29,7 @@ categories =  {
 
 	farmlands = {
 		movement_cost = 1.1
+		max_attrition = -0.01
 		color = { 137 104 165  }
 		
 		supply_limit = 5
@@ -56,6 +57,7 @@ categories =  {
 
 	woods = {
 		movement_cost = 1.1
+		max_attrition = 0.025
 		color = { 165 205 108 }
 		supply_limit = 3
 		bottleneck_chance = 10
@@ -78,6 +80,7 @@ categories =  {
 
 	steppe = {
 		movement_cost = 1.0
+		max_attrition = 0.05
 		color = { 211 201 184 }
 		supply_limit = 4
 		bottleneck_chance = 5
@@ -92,8 +95,9 @@ categories =  {
 
 
 	jungle = {
-		movement_cost = 1.5
-		max_attrition = 0.05
+		movement_cost = 1.4
+		defence = 1.5
+		max_attrition = 0.1
 		color = { 40 180 149 }
 		supply_limit = 2
 		bottleneck_chance = 25
