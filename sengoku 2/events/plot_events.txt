@@ -4395,6 +4395,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -5901,6 +5902,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -7890,6 +7892,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -9381,6 +9384,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -10868,6 +10872,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -12357,6 +12362,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -13848,6 +13854,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -15310,6 +15317,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -16801,6 +16809,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -18292,6 +18301,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -19785,6 +19795,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -21276,6 +21287,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}
@@ -22767,6 +22779,7 @@ character_event = {
 			limit = { 
 				is_close_relative = FROM 
 				NOT = { trait = kinslayer }
+				NOT = { trait = immortal }
 			}
 			add_trait = kinslayer
 		}

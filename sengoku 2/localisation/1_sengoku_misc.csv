@@ -10,6 +10,8 @@ RETTYPE_CUL_JAP;Samurai;Samouraï;Samurai;;Samurái;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 obj_become_emperor_title;Become Emperor;Devenir Empereur;Kaiser werden;;;;;;;;;;;x;
 obj_become_emperor_desc;[This.GetTitledFirstName] aspires to the lofty heights of an Emperorship.;[This.GetTitledFirstName] aspire à ceindre la couronne impériale.;[This.GetTitledFirstName] strebt nach den hohen Ehren eines Kaiserreiches.;;;;;;;;;;;x;
+obj_become_shogun_title;Become Shogun;Devenir Shogun;Shogun werden;;;;;;;;;;;x;
+obj_become_shogun_desc;[This.GetTitledFirstName] aspires to the lofty heights of an Shogunate.;[This.GetTitledFirstName] aspire à ceindre la couronne shogunat.;[This.GetTitledFirstName] strebt nach den hohen Ehren eines Shogunats.;;;;;;;;;;;x;
 ######;#;#;#;;#;;;;;;;;;x
 tea_master;Tea Master;Maître du thé;Teemeister;;Maestro del té;;;;;;;;;x
 painter;Painter;Peintre;Maler;;Pintor;;;;;;;;;x

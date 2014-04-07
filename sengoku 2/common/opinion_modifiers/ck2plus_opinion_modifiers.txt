@@ -438,14 +438,6 @@ opinion_tailteann_craftsman = {
 	opinion = 20
 }
 
-opinion_female_heir = {
-	opinion = -10
-}
-
-opinion_female_ruler = {
-	opinion = -15
-}
-
 opinion_hellenic_state_religion = {
 	opinion = 10
 	months = 60

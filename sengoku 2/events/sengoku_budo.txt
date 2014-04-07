@@ -3402,7 +3402,6 @@ character_event = {
 		clr_character_flag = no_msg_maimed_budo
 		clr_character_flag = no_msg_wounded_budo
 		clr_character_flag = tournament_has_ended_budo
-		clr_character_flag = epic_tournament_budo
 		clr_character_flag = attending_tournament_event_budo
 		clr_character_flag = tournament_winner_budo
 		clr_character_flag = winner_budo

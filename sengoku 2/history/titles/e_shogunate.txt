@@ -35,7 +35,7 @@
 	holder = 1100 #yoshikatsu
 }
 1443.8.16 = {
-	holder = 2
+	holder = 2 #yoshimasa
 }
 1551.4.9 = {
 	law = centralization_0

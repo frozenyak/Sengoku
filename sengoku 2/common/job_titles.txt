@@ -244,9 +244,12 @@ job_spiritual = {
 			AND = {
 				is_ruler = no
 				NOT = { religion = orthodox }
-				NOT = { is_heresy_of = orthodox }
+				NOT = { religion = monothelite }
+				NOT = { religion = iconoclast }
+				NOT = { religion = paulician }
 				NOT = { religion = miaphysite }
-				NOT = { is_heresy_of = miaphysite }
+				NOT = { religion = monophysite }
+				NOT = { religion = nestorian }
 			}
 			liege = { religion_group = taoic_group }
 		}

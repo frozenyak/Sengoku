@@ -681,6 +681,16 @@ decisions = {
 							trait = dishonorable8
 							trait = dishonorable9
 							trait = dishonorable10
+							trait = dyn_dishonorable1
+							trait = dyn_dishonorable2
+							trait = dyn_dishonorable3
+							trait = dyn_dishonorable4
+							trait = dyn_dishonorable5
+							trait = dyn_dishonorable6
+							trait = dyn_dishonorable7
+							trait = dyn_dishonorable8
+							trait = dyn_dishonorable9
+							trait = dyn_dishonorable10
 						}
 					}
 					change_variable = { which = "dishonorable_reduction" value = 1 }
@@ -699,6 +709,16 @@ decisions = {
 							trait = dishonorable8
 							trait = dishonorable9
 							trait = dishonorable10
+							trait = dyn_dishonorable1
+							trait = dyn_dishonorable2
+							trait = dyn_dishonorable3
+							trait = dyn_dishonorable4
+							trait = dyn_dishonorable5
+							trait = dyn_dishonorable6
+							trait = dyn_dishonorable7
+							trait = dyn_dishonorable8
+							trait = dyn_dishonorable9
+							trait = dyn_dishonorable10
 						}
 					}
 					set_variable = { which = "dishonorable_reduction" value = 0 }
@@ -770,6 +790,75 @@ decisions = {
 						}
 						remove_trait = dishonorable10
 						add_trait = dishonorable9
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable1
+						}
+						remove_trait = dyn_dishonorable1
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable2
+						}
+						remove_trait = dyn_dishonorable2
+						add_trait = dyn_dishonorable1
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable3
+						}
+						remove_trait = dyn_dishonorable3
+						add_trait = dyn_dishonorable2
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable4
+						}
+						remove_trait = dyn_dishonorable4
+						add_trait = dyn_dishonorable3
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable5
+						}
+						remove_trait = dyn_dishonorable5
+						add_trait = dyn_dishonorable4
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable6
+						}
+						remove_trait = dyn_dishonorable6
+						add_trait = dyn_dishonorable5
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable7
+						}
+						remove_trait = dyn_dishonorable7
+						add_trait = dyn_dishonorable6
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable8
+						}
+						remove_trait = dyn_dishonorable8
+						add_trait = dyn_dishonorable7
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable9
+						}
+						remove_trait = dyn_dishonorable9
+						add_trait = dyn_dishonorable8
+					}
+					if = {
+						limit = {
+							trait = dyn_dishonorable10
+						}
+						remove_trait = dyn_dishonorable10
+						add_trait = dyn_dishonorable9
 					}
 				}
 				if = {

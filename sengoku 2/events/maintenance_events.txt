@@ -97,9 +97,9 @@ character_event = {
 			#fix wrong religion heirs
 			if = {
 				limit = {
-					ai = yes
 					is_ruler = yes
-					NOT = { is_feudal = yes }
+					is_feudal = no
+					ai = yes
 					current_heir = {
 						NOT = { religion_group = ROOT }
 					}

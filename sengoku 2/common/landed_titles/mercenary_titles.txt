@@ -360,7 +360,6 @@ d_wokou_big_0 = {
 	strength_growth_per_century = 0.33
 	
 	mercenary_type = d_big_fleet_modifier
-	active = no
 }
 
 d_wokou_small_0 = {
@@ -397,7 +396,6 @@ d_wokou_small_0 = {
 	strength_growth_per_century = 0.33
 	
 	mercenary_type = d_small_fleet_modifier
-	active = no
 }
 
 d_expforce_1 = {

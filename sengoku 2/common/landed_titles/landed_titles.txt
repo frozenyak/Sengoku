@@ -52,7 +52,7 @@ e_japan = {
 	}
 	
 	# Controls a religion
-	controls_religion = shinto
+	#controls_religion = shinto
 	caliphate = yes
 
 #shikoku

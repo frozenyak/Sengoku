@@ -6,6 +6,12 @@ taoic_group = { # Yellow, red, purple
 	
 	ai_convert_same_group = 0 # never try to convert
 	ai_convert_other_group = 1 # try to convert if ai_zeal is high
+	
+	# Names given only to Taoic characters (base names)
+	male_names = {
+	}
+	female_names = {
+	}
 
 	buddhism = {
 		graphical_culture = buddhistgfx
