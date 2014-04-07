@@ -1,4 +1,5 @@
 1318.3.29 = {
+	law = succ_primogeniture
 	liege="d_chikugo"
 }
 1467.5.26 = {

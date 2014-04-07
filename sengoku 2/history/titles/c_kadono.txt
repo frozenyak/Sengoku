@@ -1,4 +1,5 @@
 1318.3.29 = {
+	law = succ_primogeniture
 	liege="d_yamashiro"
 	#liege="e_japan"
 	holder = 1993 #daigo
