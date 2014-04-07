@@ -161,14 +161,30 @@ province_event = {
 	picture = "GFX_evt_joust"
 
 	trigger = {
-		had_province_flag = {
-			flag = tournament_60_days_budo
-			days = 60
+		OR = {
+			owner = {
+				had_character_flag = {
+					flag = tournament_begins_budo
+					days = 365
+				}
+			}
+			had_province_flag = {
+				flag = tournament_60_days_budo
+				days = 60
+			}
 		}
-		owner = {
-			has_character_flag = winner_budo
-			has_character_flag = second_place_budo
-			has_character_flag = third_place_budo
+		OR = {
+			owner = {
+				had_character_flag = {
+					flag = tournament_begins_budo
+					days = 365
+				}
+			}
+			owner = {
+				has_character_flag = winner_budo
+				has_character_flag = second_place_budo
+				has_character_flag = third_place_budo
+			}
 		}
 	}
 
@@ -249,12 +265,12 @@ province_event = {
 						}
 					}
 				}
-				set_character_flag = tournament_has_ended_budo
 				opinion = {
 					modifier = opinion_tournament_participant
 					who = PREV
 					years = 2
 				}
+				set_character_flag = tournament_has_ended_budo
 				clr_character_flag = attending_tournament_budo
 				clr_character_flag = attending_tournament_event_budo
 			}
@@ -380,35 +396,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 1000
 		modifier = {
-			factor = 1.25
-			martial = 8
+			factor = 1.1
+			martial = 20
 		}
 		modifier = {
-			factor = 1.25
-			martial = 10
+			factor = 1.1
+			martial = 19
 		}
 		modifier = {
-			factor = 1.25
-			martial = 12
+			factor = 1.1
+			martial = 18
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			martial = 17
+		}
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		modifier = {
+			factor = 1.1
+			martial = 15
+		}
+		modifier = {
+			factor = 1.1
 			martial = 14
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.1
+			martial = 13
+		}
+		modifier = {
+			factor = 1.1
+			martial = 12
+		}
+		modifier = {
+			factor = 1.1
+			martial = 11
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 1 }
 		}
 		modifier = {
@@ -480,35 +544,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 800
 		modifier = {
-			factor = 1.25
-			martial = 8
+			factor = 1.1
+			martial = 20
 		}
 		modifier = {
-			factor = 1.25
-			martial = 10
+			factor = 1.1
+			martial = 19
 		}
 		modifier = {
-			factor = 1.25
-			martial = 12
+			factor = 1.1
+			martial = 18
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			martial = 17
+		}
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		modifier = {
+			factor = 1.1
+			martial = 15
+		}
+		modifier = {
+			factor = 1.1
 			martial = 14
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.1
+			martial = 13
+		}
+		modifier = {
+			factor = 1.1
+			martial = 12
+		}
+		modifier = {
+			factor = 1.1
+			martial = 11
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 1 }
 		}
 		modifier = {
@@ -582,35 +694,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 500
 		modifier = {
-			factor = 1.25
-			martial = 8
+			factor = 1.1
+			martial = 20
 		}
 		modifier = {
-			factor = 1.25
-			martial = 10
+			factor = 1.1
+			martial = 19
 		}
 		modifier = {
-			factor = 1.25
-			martial = 12
+			factor = 1.1
+			martial = 18
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			martial = 17
+		}
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		modifier = {
+			factor = 1.1
+			martial = 15
+		}
+		modifier = {
+			factor = 1.1
 			martial = 14
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.1
+			martial = 13
+		}
+		modifier = {
+			factor = 1.1
+			martial = 12
+		}
+		modifier = {
+			factor = 1.1
+			martial = 11
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 1 }
 		}
 		modifier = {
@@ -677,35 +837,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 250
 		modifier = {
-			factor = 1.25
-			martial = 8
+			factor = 1.1
+			martial = 20
 		}
 		modifier = {
-			factor = 1.25
-			martial = 10
+			factor = 1.1
+			martial = 19
 		}
 		modifier = {
-			factor = 1.25
-			martial = 12
+			factor = 1.1
+			martial = 18
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			martial = 17
+		}
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		modifier = {
+			factor = 1.1
+			martial = 15
+		}
+		modifier = {
+			factor = 1.1
 			martial = 14
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.1
+			martial = 13
+		}
+		modifier = {
+			factor = 1.1
+			martial = 12
+		}
+		modifier = {
+			factor = 1.1
+			martial = 11
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 1 }
 		}
 	}
@@ -752,35 +960,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 250
 		modifier = {
-			factor = 0.75
-			martial = 8
+			factor = 0.9
+			martial = 20
 		}
 		modifier = {
-			factor = 0.75
-			martial = 10
+			factor = 0.9
+			martial = 19
 		}
 		modifier = {
-			factor = 0.75
-			martial = 12
+			factor = 0.9
+			martial = 18
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			martial = 17
+		}
+		modifier = {
+			factor = 0.9
+			martial = 16
+		}
+		modifier = {
+			factor = 0.9
+			martial = 15
+		}
+		modifier = {
+			factor = 0.9
 			martial = 14
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.9
+			martial = 13
+		}
+		modifier = {
+			factor = 0.9
+			martial = 12
+		}
+		modifier = {
+			factor = 0.9
+			martial = 11
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 1 }
 		}
 	}
@@ -825,35 +1081,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 250
 		modifier = {
-			factor = 0.75
-			martial = 8
+			factor = 0.9
+			martial = 20
 		}
 		modifier = {
-			factor = 0.75
-			martial = 10
+			factor = 0.9
+			martial = 19
 		}
 		modifier = {
-			factor = 0.75
-			martial = 12
+			factor = 0.9
+			martial = 18
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			martial = 17
+		}
+		modifier = {
+			factor = 0.9
+			martial = 16
+		}
+		modifier = {
+			factor = 0.9
+			martial = 15
+		}
+		modifier = {
+			factor = 0.9
 			martial = 14
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.9
+			martial = 13
+		}
+		modifier = {
+			factor = 0.9
+			martial = 12
+		}
+		modifier = {
+			factor = 0.9
+			martial = 11
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 1 }
 		}
 	}
@@ -887,7 +1191,7 @@ character_event = {
 		NOT = {
 			has_character_flag = tournament_has_ended_budo
 		}
-		trait = tough_soldier
+		trait = tough_soldier 
 		top_liege = {
 			has_character_flag = tournament_begins_budo
 			NOT = {
@@ -899,35 +1203,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 250
 		modifier = {
-			factor = 0.75
-			martial = 8
+			factor = 0.9
+			martial = 20
 		}
 		modifier = {
-			factor = 0.75
-			martial = 10
+			factor = 0.9
+			martial = 19
 		}
 		modifier = {
-			factor = 0.75
-			martial = 12
+			factor = 0.9
+			martial = 18
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			martial = 17
+		}
+		modifier = {
+			factor = 0.9
+			martial = 16
+		}
+		modifier = {
+			factor = 0.9
+			martial = 15
+		}
+		modifier = {
+			factor = 0.9
 			martial = 14
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.9
+			martial = 13
+		}
+		modifier = {
+			factor = 0.9
+			martial = 12
+		}
+		modifier = {
+			factor = 0.9
+			martial = 11
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 1 }
 		}
 	}
@@ -938,7 +1290,7 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA_BUDO_265"
-		remove_trait = tough_soldier
+		remove_trait = tough_soldier 
 		add_trait = skilled_tactician
 	}
 }
@@ -961,7 +1313,7 @@ character_event = {
 		NOT = {
 			has_character_flag = tournament_has_ended_budo
 		}
-		trait = skilled_tactician
+		trait = skilled_tactician 
 		top_liege = {
 			has_character_flag = tournament_begins_budo
 			NOT = {
@@ -973,35 +1325,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 250
 		modifier = {
-			factor = 0.75
-			martial = 8
+			factor = 0.9
+			martial = 20
 		}
 		modifier = {
-			factor = 0.75
-			martial = 10
+			factor = 0.9
+			martial = 19
 		}
 		modifier = {
-			factor = 0.75
-			martial = 12
+			factor = 0.9
+			martial = 18
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			martial = 17
+		}
+		modifier = {
+			factor = 0.9
+			martial = 16
+		}
+		modifier = {
+			factor = 0.9
+			martial = 15
+		}
+		modifier = {
+			factor = 0.9
 			martial = 14
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.9
+			martial = 13
+		}
+		modifier = {
+			factor = 0.9
+			martial = 12
+		}
+		modifier = {
+			factor = 0.9
+			martial = 11
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 1.1
 			NOT = { martial = 1 }
 		}
 	}
@@ -1012,7 +1412,7 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA_BUDO_266"
-		remove_trait = skilled_tactician
+		remove_trait = skilled_tactician 
 		add_trait = brilliant_strategist
 	}
 }
@@ -1035,7 +1435,7 @@ character_event = {
 		NOT = {
 			has_character_flag = tournament_has_ended_budo
 		}
-		trait = brilliant_strategist
+		trait = brilliant_strategist 
 		top_liege = {
 			has_character_flag = tournament_begins_budo
 			NOT = {
@@ -1047,35 +1447,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 250
 		modifier = {
-			factor = 1.25
-			martial = 8
+			factor = 1.1
+			martial = 20
 		}
 		modifier = {
-			factor = 1.25
-			martial = 10
+			factor = 1.1
+			martial = 19
 		}
 		modifier = {
-			factor = 1.25
-			martial = 12
+			factor = 1.1
+			martial = 18
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			martial = 17
+		}
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		modifier = {
+			factor = 1.1
+			martial = 15
+		}
+		modifier = {
+			factor = 1.1
 			martial = 14
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.1
+			martial = 13
+		}
+		modifier = {
+			factor = 1.1
+			martial = 12
+		}
+		modifier = {
+			factor = 1.1
+			martial = 11
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 1 }
 		}
 	}
@@ -1109,7 +1557,7 @@ character_event = {
 		NOT = {
 			has_character_flag = tournament_has_ended_budo
 		}
-		trait = skilled_tactician
+		trait = skilled_tactician 
 		top_liege = {
 			has_character_flag = tournament_begins_budo
 			NOT = {
@@ -1121,35 +1569,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 250
 		modifier = {
-			factor = 1.25
-			martial = 8
+			factor = 1.1
+			martial = 20
 		}
 		modifier = {
-			factor = 1.25
-			martial = 10
+			factor = 1.1
+			martial = 19
 		}
 		modifier = {
-			factor = 1.25
-			martial = 12
+			factor = 1.1
+			martial = 18
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			martial = 17
+		}
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		modifier = {
+			factor = 1.1
+			martial = 15
+		}
+		modifier = {
+			factor = 1.1
 			martial = 14
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.1
+			martial = 13
+		}
+		modifier = {
+			factor = 1.1
+			martial = 12
+		}
+		modifier = {
+			factor = 1.1
+			martial = 11
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 1 }
 		}
 	}
@@ -1195,35 +1691,83 @@ character_event = {
 	mean_time_to_happen = {
 		months = 250
 		modifier = {
-			factor = 1.25
-			martial = 8
+			factor = 1.1
+			martial = 20
 		}
 		modifier = {
-			factor = 1.25
-			martial = 10
+			factor = 1.1
+			martial = 19
 		}
 		modifier = {
-			factor = 1.25
-			martial = 12
+			factor = 1.1
+			martial = 18
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
+			martial = 17
+		}
+		modifier = {
+			factor = 1.1
+			martial = 16
+		}
+		modifier = {
+			factor = 1.1
+			martial = 15
+		}
+		modifier = {
+			factor = 1.1
 			martial = 14
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.1
+			martial = 13
+		}
+		modifier = {
+			factor = 1.1
+			martial = 12
+		}
+		modifier = {
+			factor = 1.1
+			martial = 11
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { martial = 8 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 7 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 5 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 3 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
+			NOT = { martial = 2 }
+		}
+		modifier = {
+			factor = 0.9
 			NOT = { martial = 1 }
 		}
 	}
@@ -1270,12 +1814,66 @@ character_event = {
 	mean_time_to_happen = {
 		months = 10
 		modifier = {
-			factor = 0.75
-			martial = 8
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = tournament_begins_budo days = 60 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = tournament_begins_budo days = 70 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = tournament_begins_budo days = 80 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = tournament_begins_budo days = 90 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = tournament_begins_budo days = 100 }
+			}
 		}
 		modifier = {
 			factor = 0.75
-			martial = 10
+			martial = 20
+		}
+		modifier = {
+			factor = 0.75
+			martial = 19
+		}
+		modifier = {
+			factor = 0.75
+			martial = 18
+		}
+		modifier = {
+			factor = 0.75
+			martial = 17
+		}
+		modifier = {
+			factor = 0.75
+			martial = 16
+		}
+		modifier = {
+			factor = 0.75
+			martial = 15
+		}
+		modifier = {
+			factor = 0.75
+			martial = 14
+		}
+		modifier = {
+			factor = 0.75
+			martial = 13
 		}
 		modifier = {
 			factor = 0.75
@@ -1283,7 +1881,19 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.75
-			martial = 14
+			martial = 11
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 8 }
 		}
 		modifier = {
 			factor = 1.25
@@ -1291,11 +1901,23 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.25
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 1.25
 			NOT = { martial = 5 }
 		}
 		modifier = {
 			factor = 1.25
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 1.25
 			NOT = { martial = 3 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 2 }
 		}
 		modifier = {
 			factor = 1.25
@@ -1315,7 +1937,17 @@ character_event = {
 		name = "EVTOPTA88270"
 		wealth = 100
 		prestige = 300
-		decadence = -5
+		if = {
+			limit = {
+				religion_group = muslim
+				NOT = { 
+					any_liege = {
+						dynasty = ROOT
+					}
+				}
+			}
+			decadence = -3
+		}
 		hidden_tooltip = {
 			if = {
 				limit = {
@@ -1328,7 +1960,7 @@ character_event = {
 				top_liege = { character_event = { id = BUDO.284 } }
 			}
 			any_dynasty_member = {
-				limit = {
+				limit = { 
 					ai = no
 					NOT = { character = ROOT }
 				}
@@ -1349,12 +1981,10 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA88284"
-		FROM = {
-			opinion = {
-				modifier = opinion_tournament_winner
-					who = ROOT
-				years = 20
-			}
+		opinion = {
+			modifier = opinion_tournament_winner
+			who = FROM
+			years = 20
 		}
 	}
 }
@@ -1390,12 +2020,66 @@ character_event = {
 	mean_time_to_happen = {
 		months = 10
 		modifier = {
-			factor = 0.75
-			martial = 8
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = winner_budo days = 10 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = winner_budo days = 20 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = winner_budo days = 30 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = winner_budo days = 40 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = winner_budo days = 50 }
+			}
 		}
 		modifier = {
 			factor = 0.75
-			martial = 10
+			martial = 20
+		}
+		modifier = {
+			factor = 0.75
+			martial = 19
+		}
+		modifier = {
+			factor = 0.75
+			martial = 18
+		}
+		modifier = {
+			factor = 0.75
+			martial = 17
+		}
+		modifier = {
+			factor = 0.75
+			martial = 16
+		}
+		modifier = {
+			factor = 0.75
+			martial = 15
+		}
+		modifier = {
+			factor = 0.75
+			martial = 14
+		}
+		modifier = {
+			factor = 0.75
+			martial = 13
 		}
 		modifier = {
 			factor = 0.75
@@ -1403,7 +2087,19 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.75
-			martial = 14
+			martial = 11
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 8 }
 		}
 		modifier = {
 			factor = 1.25
@@ -1411,11 +2107,23 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.25
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 1.25
 			NOT = { martial = 5 }
 		}
 		modifier = {
 			factor = 1.25
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 1.25
 			NOT = { martial = 3 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 2 }
 		}
 		modifier = {
 			factor = 1.25
@@ -1435,7 +2143,17 @@ character_event = {
 		name = "EVTOPTA88271"
 		wealth = 75
 		prestige = 250
-		decadence = -3
+		if = {
+			limit = {
+				religion_group = muslim
+				NOT = { 
+					any_liege = {
+						dynasty = ROOT
+					}
+				}
+			}
+			decadence = -2
+		}
 		hidden_tooltip = {
 			if = {
 				limit = {
@@ -1448,7 +2166,7 @@ character_event = {
 				top_liege = { character_event = { id = BUDO.285 } }
 			}
 			any_dynasty_member = {
-				limit = {
+				limit = { 
 					ai = no
 					NOT = { character = ROOT }
 				}
@@ -1469,12 +2187,10 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA88285"
-		FROM = {
-			opinion = {
-				modifier = opinion_tournament_second_place
-					who = ROOT
-				years = 15
-			}
+		opinion = {
+			modifier = opinion_tournament_second_place
+			who = FROM
+			years = 15
 		}
 	}
 }
@@ -1511,12 +2227,66 @@ character_event = {
 	mean_time_to_happen = {
 		months = 10
 		modifier = {
-			factor = 0.75
-			martial = 8
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = second_place_budo days = 10 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = second_place_budo days = 20 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = second_place_budo days = 30 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = second_place_budo days = 40 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				had_character_flag = { flag = second_place_budo days = 50 }
+			}
 		}
 		modifier = {
 			factor = 0.75
-			martial = 10
+			martial = 20
+		}
+		modifier = {
+			factor = 0.75
+			martial = 19
+		}
+		modifier = {
+			factor = 0.75
+			martial = 18
+		}
+		modifier = {
+			factor = 0.75
+			martial = 17
+		}
+		modifier = {
+			factor = 0.75
+			martial = 16
+		}
+		modifier = {
+			factor = 0.75
+			martial = 15
+		}
+		modifier = {
+			factor = 0.75
+			martial = 14
+		}
+		modifier = {
+			factor = 0.75
+			martial = 13
 		}
 		modifier = {
 			factor = 0.75
@@ -1524,7 +2294,19 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.75
-			martial = 14
+			martial = 11
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 10 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 9 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 8 }
 		}
 		modifier = {
 			factor = 1.25
@@ -1532,11 +2314,23 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.25
+			NOT = { martial = 6 }
+		}
+		modifier = {
+			factor = 1.25
 			NOT = { martial = 5 }
 		}
 		modifier = {
 			factor = 1.25
+			NOT = { martial = 4 }
+		}
+		modifier = {
+			factor = 1.25
 			NOT = { martial = 3 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 2 }
 		}
 		modifier = {
 			factor = 1.25
@@ -1556,7 +2350,17 @@ character_event = {
 		name = "EVTOPTA88272"
 		wealth = 50
 		prestige = 200
-		decadence = -1
+		if = {
+			limit = {
+				religion_group = muslim
+				NOT = { 
+					any_liege = {
+						dynasty = ROOT
+					}
+				}
+			}
+			decadence = -1
+		}
 		hidden_tooltip = {
 			if = {
 				limit = {
@@ -1569,7 +2373,7 @@ character_event = {
 				top_liege = { character_event = { id = BUDO.286 } }
 			}
 			any_dynasty_member = {
-				limit = {
+				limit = { 
 					ai = no
 					NOT = { character = ROOT }
 				}
@@ -1590,12 +2394,10 @@ character_event = {
 
 	option = {
 		name = "EVTOPTA88286"
-		FROM = {
-			opinion = {
-				modifier = opinion_tournament_third_place
-				who = ROOT
-				years = 10
-			}
+		opinion = {
+			modifier = opinion_tournament_third_place
+			who = FROM
+			years = 10
 		}
 	}
 }
@@ -2053,7 +2855,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.1
-			trait = thrifty_clerk
+			trait = thrifty_clerk 
 		}
 		modifier = {
 			factor = 1.5
@@ -2063,16 +2865,16 @@ character_event = {
 			factor = 1.5
 			NOT = {
 				OR = {
-					trait = midas_touched
+					trait = midas_touched 
 					trait = fortune_builder
-					trait = thrifty_clerk
+					trait = thrifty_clerk 
 					trait = indulgent_wastrel
 				}
 			}
 		}
 		modifier = {
 			factor = 0.9
-			trait = diligent
+			trait = diligent 
 		}
 		modifier = {
 			factor = 1.5
@@ -2122,7 +2924,7 @@ character_event = {
 		months = 250
 		modifier = {
 			factor = 1.5
-			trait = midas_touched
+			trait = midas_touched 
 		}
 		modifier = {
 			factor = 1.1
@@ -2130,7 +2932,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.9
-			trait = thrifty_clerk
+			trait = thrifty_clerk 
 		}
 		modifier = {
 			factor = 0.8
@@ -2142,14 +2944,14 @@ character_event = {
 				OR = {
 					trait = midas_touched
 					trait = fortune_builder
-					trait = thrifty_clerk
+					trait = thrifty_clerk 
 					trait = indulgent_wastrel
 				}
 			}
 		}
 		modifier = {
 			factor = 1.5
-			trait = diligent
+			trait = diligent 
 		}
 		modifier = {
 			factor = 0.9
@@ -2199,7 +3001,7 @@ character_event = {
 		months = 250
 		modifier = {
 			factor = 0.8
-			trait = grey_eminence
+			trait = grey_eminence 
 		}
 		modifier = {
 			factor = 0.9
@@ -2217,7 +3019,7 @@ character_event = {
 			factor = 1.5
 			NOT = {
 				OR = {
-					trait = grey_eminence
+					trait = grey_eminence 
 					trait = charismatic_negotiator
 					trait = underhanded_rogue
 					trait = naive_appeaser
@@ -2276,7 +3078,7 @@ character_event = {
 		months = 250
 		modifier = {
 			factor = 1.5
-			trait = grey_eminence
+			trait = grey_eminence 
 		}
 		modifier = {
 			factor = 1.1
@@ -2294,7 +3096,7 @@ character_event = {
 			factor = 1.5
 			NOT = {
 				OR = {
-					trait = grey_eminence
+					trait = grey_eminence 
 					trait = charismatic_negotiator
 					trait = underhanded_rogue
 					trait = naive_appeaser
@@ -2576,5 +3378,37 @@ character_event = {
 				years = 10
 			}
 		}
+	}
+}
+
+
+###########################################
+# Flag management                         #
+###########################################
+
+# Safety catch - clears character flags and modifiers
+character_event = {
+	id = BUDO.999
+
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = do_not_disturb_budo
+		clr_character_flag = epic_tournament_budo
+		clr_character_flag = attending_tournament_budo
+		clr_character_flag = no_msg_death_budo
+		clr_character_flag = no_msg_maimed_budo
+		clr_character_flag = no_msg_wounded_budo
+		clr_character_flag = tournament_has_ended_budo
+		clr_character_flag = epic_tournament_budo
+		clr_character_flag = attending_tournament_event_budo
+		clr_character_flag = tournament_winner_budo
+		clr_character_flag = winner_budo
+		clr_character_flag = tournament_second_place_budo
+		clr_character_flag = second_place_budo
+		clr_character_flag = tournament_third_place_budo
+		clr_character_flag = third_place_budo
 	}
 }

@@ -6,10 +6,10 @@ decisions = {
 			NOT = {
 				has_character_flag = epic_tournament
 			}
-			NOT = {
-				religion_group = muslim
-				religion_group = pagan_group
-				culture = japanese
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group
+				religion_group = zoroastrian_group
 			}
 			independent = yes
 			NOT = { is_female = yes	}
@@ -20,6 +20,7 @@ decisions = {
 			location = {
 				owner = { character = ROOT }
 			}
+			NOT = { culture = japanese }
 		}
 		allow = {
 			war = no
@@ -33,6 +34,7 @@ decisions = {
 			set_character_flag = epic_tournament
 			set_character_flag = do_not_disturb
 			clr_character_flag = tournament_has_ended
+			hidden_tooltip = { character_event = { id = 70999 days = 150 } } # Safety catch flag clearing
 			wealth = -200
 			prestige = 100
 			character_event = { id = 70033 tooltip = "tournament_invite" }
@@ -239,6 +241,7 @@ decisions = {
 		effect = {
 			set_character_flag = epic_tournament_furusiyya
 			clr_character_flag = tournament_has_ended_furusiyya
+			hidden_tooltip = { character_event = { id = 88999 days = 150 } } # Safety catch flag clearing
 			wealth = -200
 			prestige = 100
 			decadence = -5

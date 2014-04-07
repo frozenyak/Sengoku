@@ -26,10 +26,8 @@ character_event = {
 		#Fires off events about how character adapts to being vegetarian
 		if = {
 			limit = {
-				AND = {
-					trait = temperate
-					trait = kind
-				}
+				trait = temperate
+				trait = kind
 			}
 			hidden_tooltip = {
 				random_list = {
@@ -102,11 +100,9 @@ character_event = {
 	capable_only = yes
 
 	trigger = {
-		AND = {
-			NOT = { religion_group = taoic_group }
-			NOT = { religion = cathar }
-			NOT = { religion = bogomilist }
-		}
+		NOT = { religion_group = taoic_group }
+		NOT = { religion = cathar }
+		NOT = { religion = bogomilist }
 		trait = vegetarian
 	}
 
@@ -159,10 +155,8 @@ character_event = {
 		#Fires off events about how character adapts to being vegetarian
 		if = {
 			limit = {
-				AND = {
-					trait = temperate
-					trait = kind
-				}
+				trait = temperate
+				trait = kind
 			}
 			hidden_tooltip = {
 				random_list = {
@@ -243,10 +237,8 @@ character_event = {
 		#Fires off events about how character adapts to being vegetarian
 		if = {
 			limit = {
-				AND = {
-					trait = temperate
-					trait = kind
-				}
+				trait = temperate
+				trait = kind
 			}
 			hidden_tooltip = {
 				random_list = {

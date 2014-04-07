@@ -39,29 +39,61 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 9600
+		months = 9600 # 800 years
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			religion_authority = 0.6
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
+			religion_authority = 0.7
+		}
+		modifier = {
+			factor = 1.5
 			religion_authority = 0.8
 		}
 		modifier = {
-			factor = 0.75
+			factor = 2.0
+			religion_authority = 0.9
+		}
+		#modifier = {
+		#	factor = 3.0
+		#	OR = {
+		#		province_id = 333 # Rome
+		#		province_id = 497 # Thrace
+		#		province_id = 719 # Mecca
+		#	}
+		#}
+		modifier = {
+			factor = 0.5
 			NOT = { religion_authority = 0.2 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.3 }
 		}
 		modifier = {
 			factor = 0.75
 			NOT = { religion_authority = 0.4 }
 		}
-		
 		modifier = {
 			factor = 0.75
+			NOT = { religion_authority = 0.5 }
+		}
+		
+		modifier = {
+			factor = 0.5
 			any_neighbor_province = {
 				is_land = yes
 				is_heresy_of = ROOT
+			}
+		}
+		modifier = {
+			factor = 0.25
+			any_neighbor_province = {
+				is_land = yes
+				is_heresy_of = ROOT
+				has_province_modifier = heretic_stronghold
 			}
 		}
 	}
@@ -88,6 +120,7 @@ province_event = {
 				top_liege = {
 					random_realm_province = {
 						limit = {
+							is_land = yes
 							is_heresy_of = ROOT
 						}
 						ROOT = {
@@ -203,6 +236,10 @@ character_event = {
 			religion_group = ROOT
 			NOT = { religion = ROOT }
 			NOT = { religion_group = pagan_group }
+			OR = {
+				is_heretic = yes
+				religion_authority = ROOT # The local religion has at least the same authority as my religion
+			}
 		}
 	}
 	
@@ -221,24 +258,40 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			religion_authority = 0.6
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
+			religion_authority = 0.7
+		}
+		modifier = {
+			factor = 1.5
 			religion_authority = 0.8
+		}
+		modifier = {
+			factor = 2.0
+			religion_authority = 0.9
 		}
 		modifier = {
 			factor = 4.0
 			NOT = { is_heresy_of = ROOT }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.5
 			NOT = { religion_authority = 0.2 }
 		}
 		modifier = {
 			factor = 0.75
+			NOT = { religion_authority = 0.3 }
+		}
+		modifier = {
+			factor = 0.75
 			NOT = { religion_authority = 0.4 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.5 }
 		}
 	}
 	
@@ -262,6 +315,13 @@ character_event = {
 		
 		location = {
 			reverse_religion = ROOT
+		}
+		hidden_tooltip = {
+			if = {
+				limit = { religion_group = indian_group }
+				set_character_flag = india_converted
+				character_event = { id = RoI.30120 } # Set religious branch randomly
+			}
 		}
 	}
 	option = {
@@ -362,6 +422,15 @@ letter_event = {
 		}
 		
 		religion = FROM
+		hidden_tooltip = {
+			if = {
+				limit = { religion_group = indian_group }
+				set_character_flag = india_converted
+				character_event = { id = RoI.30121 } # Set religious branch to liege's branch
+			}
+		}
+
+		
 		
 		FROM = {
 			character_event = { id = SoA.4023 tooltip = EVTTOOLTIP_SOA_4023 }
@@ -563,6 +632,8 @@ character_event = {
 				age = 16
 				prisoner = no
 				NOT = { trait = incapable }
+				mercenary = false
+				holy_order = false
 				OR = {
 					same_liege = ROOT
 					is_liege_of = ROOT
@@ -628,6 +699,13 @@ character_event = {
 		}
 		
 		religion = FROM
+		hidden_tooltip = { 
+			if = {
+				limit = { religion_group = indian_group }
+				set_character_flag = india_converted
+				character_event = { id = RoI.30122 }
+			}
+		}
 	}
 	
 	option = { # Refuse

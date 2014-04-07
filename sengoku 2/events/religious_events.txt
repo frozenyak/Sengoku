@@ -21,6 +21,7 @@ province_event = {
 	
 	trigger = {
 		is_heretic = no
+		has_heresies = yes
 		NOT = { religion_group = pagan_group }
 		# NOT = { province_id = 333 } # Rome
 		# NOT = { province_id = 497 } # Thrace
@@ -597,6 +598,7 @@ province_event = {
 	
 	trigger = {
 		is_heretic = no
+		has_heresies = yes
 		owner = { is_heretic = no }
 		# NOT = { province_id = 333 } # Rome
 		# NOT = { province_id = 497 } # Thrace
@@ -4342,6 +4344,12 @@ character_event = {
 			factor = 100
 		}
 		religion = FROMFROM
+		if = {
+			limit = {
+				religion_group = indian_group
+			}
+			character_event = { id = RoI.120 } # Assign Indian religion branch
+		}
 	}
 	
 	option = { # Sympathy for the old religion
@@ -4392,6 +4400,12 @@ character_event = {
 		}
 		
 		religion = FROMFROM
+		if = {
+			limit = {
+				religion_group = indian_group
+			}
+			character_event = { id = RoI.120 } # Assign Indian religion branch
+		}
 	}
 }
 

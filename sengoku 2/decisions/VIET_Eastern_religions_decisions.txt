@@ -55,10 +55,8 @@ decisions = {
 			}
 			modifier = {
 				factor = 0
-				AND = {
-					trait = arbitrary
-					NOT = { trait = zealous }
-				}
+				trait = arbitrary
+				NOT = { trait = zealous }
 			}
 			modifier = {
 				factor = 2

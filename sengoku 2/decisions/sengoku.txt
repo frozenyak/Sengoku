@@ -6,6 +6,7 @@ decisions = {
 			NOT = {
 				has_character_flag = epic_tournament_budo
 			}
+			culture = japanese
 			independent = yes
 			is_female = no
 			OR = {
@@ -15,7 +16,6 @@ decisions = {
 			location = {
 				owner = { character = ROOT }
 			}
-			culture = japanese
 		}
 		allow = {
 			war = no
@@ -28,6 +28,7 @@ decisions = {
 		effect = {
 			set_character_flag = epic_tournament_budo
 			clr_character_flag = tournament_has_ended_budo
+			hidden_tooltip = { character_event = { id = BUDO.999 days = 150 } } # Safety catch flag clearing
 			wealth = -200
 			prestige = 100
 			decadence = -2

@@ -25,9 +25,9 @@ character_event = {
 	id = 150
 	desc = "EVTDESC150"
 	picture = "GFX_evt_burning_house"
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	immediate = {
 		if = {
 			limit = {
@@ -419,9 +419,9 @@ character_event = {
 	id = 40000
 	desc = "EVTDESC40000"
 	picture = "GFX_evt_burning_house"
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA40000"
 	}
@@ -1966,9 +1966,9 @@ character_event = {
 	id = 156
 	desc = "EVTDESC156"
 	picture = "GFX_evt_shadow"
-
+	
 	hide_FROM = yes
-	is_triggered_only = yes
+	is_triggered_only = yes 
 
 	immediate = {
 		FROM = { character_event = { id = 40003 } }
@@ -1984,11 +1984,11 @@ character_event = {
 	id = 40003
 	desc = "EVTDESC40003"
 	picture = "GFX_evt_shadow"
-
+	
 	hide_FROM = yes
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA40003"
 		if = {
@@ -2560,11 +2560,11 @@ character_event = {
 	id = 40007
 	desc = "EVTDESC40006"
 	picture = "GFX_evt_shadow"
-
+	
 	hide_FROM = yes
 
-	is_triggered_only = yes
-
+	is_triggered_only = yes 
+	
 	immediate = {
 		if = {
 			limit = {
@@ -2854,10 +2854,10 @@ character_event = {
 	id = 40008
 	desc = "EVTDESC40006"
 	picture = "GFX_evt_shadow"
-
-	hide_FROM = yes
-	is_triggered_only = yes
-
+	
+	hide_FROM = yes	
+	is_triggered_only = yes 
+	
 	immediate = {
 		if = {
 			limit = {
@@ -3036,23 +3036,23 @@ character_event = {
 	id = 162
 	picture = "GFX_evt_shadow"
 	desc = "EVTDESC162"
-
+	
 	hide_FROM = yes
-	is_triggered_only = yes
-
+	is_triggered_only = yes 
+	
 	immediate = {
 		if = {
 			limit = {
 				spouse = { character = FROM }
-				FROM = {
+				FROM = { 
 					ai = no
-					NOT = { has_character_flag = achievement_spouse_killer }
+					NOT = { has_character_flag = achievement_spouse_killer } 
 				}
 			}
 			FROM = { set_character_flag = achievement_spouse_killer }
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA162"
 		hidden_tooltip = {
@@ -3069,9 +3069,9 @@ character_event = {
 	id = 40009
 	desc = "EVTDESC40009"
 	picture = "GFX_evt_shadow"
-
+	
 	hide_FROM = yes
-	is_triggered_only = yes
+	is_triggered_only = yes 
 
 	option = {
 		name = "EVTOPTA40009"
@@ -3095,12 +3095,12 @@ character_event = {
 	id = 163
 	desc = "EVTDESC163"
 	picture = "GFX_evt_shadow"
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	immediate = {
 		if = {
-			limit = {
+			limit = { 
 				is_close_relative = FROM
 				NOT = { FROM = { religion_group = muslim } }
 				NOT = { FROM = { trait = immortal } }
@@ -3212,10 +3212,10 @@ character_event = {
 	id = 40010
 	desc = "EVTDESC40010"
 	picture = "GFX_evt_shadow"
-
+	
 	hide_FROM = yes
-	is_triggered_only = yes
-
+	is_triggered_only = yes 
+	
 	immediate = {
 		if = {
 			limit = {
@@ -3394,9 +3394,9 @@ character_event = {
 	id = 40020
 	desc = "EVTDESC40020"
 	picture = "GFX_evt_shadow"
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA40020" #Inside same realm, go to top liege.
 		trigger = {
@@ -3408,7 +3408,7 @@ character_event = {
 			factor = 1000
 		}
 		top_liege = {
-			character_event = {
+			character_event = { 
 				id = 40021
 				tooltip = "EVTTOOLTIP40021"	#ask liege for help.
 			}
@@ -3426,14 +3426,14 @@ character_event = {
 			factor = 1000
 		}
 		top_liege = {
-			character_event = {
+			character_event = { 
 				id = 40026
 				days = 2
 				tooltip = "EVTTOOLTIP40026"	#will be exposed.
 			}
 		}
 	}
-
+		
 	option = {
 		name = "EVTOPTB40020" #Are we his liege?
 		trigger = {
@@ -3452,9 +3452,9 @@ character_event = {
 			}
 		}
 		if = {
-		 	limit = {
+		 	limit = { 
 		 		realm_intrigue = 9
-		 		NOT = { realm_intrigue = 16 }
+		 		NOT = { realm_intrigue = 16 } 
 		 	}
 			random = {
 				chance = 50
@@ -3462,8 +3462,8 @@ character_event = {
 			}
 		}
 		if = {
-		 	limit = {
-		 		NOT = { realm_intrigue = 9 }
+		 	limit = { 
+		 		NOT = { realm_intrigue = 9 } 
 		 	}
 			random = {
 				chance = 30
@@ -3476,7 +3476,7 @@ character_event = {
 		trigger = {
 			same_realm = FROMFROM
 			independent = yes
-			FROM = {
+			FROM = { 
 			 	FROM = {
 			 		prisoner = yes
 					NOT = { host = { character = ROOT } }
@@ -3490,24 +3490,24 @@ character_event = {
 		FROM = { FROM = { opinion = { who = ROOT modifier = i_attempted_murder months = 2 } } }
 
 		send_assassin = FROMFROM
-	}
+	}	
 	option = {
 		name = "EVTOPTE40020"	#slay him, he is prisoner
 		trigger = {
 			same_realm = FROMFROM
 			independent = yes
-			FROM = {
+			FROM = { 
 			 	FROM = {
 			 		prisoner = yes
 					host = { character = ROOT }
 				}
-			}
+			}			
 		}
 		ai_chance = {
 			factor = 1000
 		}
-		FROM = {
-			FROM = {
+		FROM = { 
+			FROM = { 
 				death = {
 					death_reason = death_execution
 					killer = ROOT
@@ -3518,17 +3518,17 @@ character_event = {
 	option = {
 		trigger = {
 			NOT = {	same_realm = FROMFROM }
-			FROM = {
+			FROM = { 
 			 	FROM = {
 					NOT = { has_opinion_modifier = { who = ROOT  modifier = i_attempted_murder } }
 				}
-			}
+			}			
 		}
 		name = "EVTOPTC40020"		# Someone in another realm.
 		ai_chance = {
 			factor = 1000
 		}
-
+		
 		FROM = { FROM = { opinion = { who = ROOT modifier = i_attempted_murder months = 2 } } }
 
 		send_assassin = FROMFROM
@@ -3548,9 +3548,9 @@ character_event = {
 	id = 40021
 	desc = "EVTDESC40021"
 	picture = GFX_evt_shadow
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA40021"	 # give claim
 		ai_chance = {
@@ -3576,7 +3576,7 @@ character_event = {
 	option = {
 		name = "EVTOPTB40021"	 # attempt to imprison
 		trigger = {
-			any_realm_character = {
+			any_realm_character = { 
 				has_character_flag= we_are_evil_assasinator
 				prisoner = no
 			}
@@ -3588,37 +3588,37 @@ character_event = {
 				trait = just
 			}
 		}
-		any_realm_character = {
+		any_realm_character = { 
 			limit = { has_character_flag = we_are_evil_assasinator  }
 			opinion = {
 				modifier = opinion_betrayed
 				who = FROM
-				years = 10
+				years = 2
 			}
 			reverse_opinion = {
 				who = ROOT
 				modifier = evil_murderer
-				years = 100
+				years = 5
 			}
 		}
-		hidden_tooltip = { FROM = { character_event = { id = 40024 days = 1 random = 2 } } }
+		hidden_tooltip = { FROM = { character_event = { id = 40024 days = 1 random = 2 } } }		
 		if = {
 		 	limit = { realm_intrigue = 16 }
 			random_list = {
-				70 = {
-					random_realm_character = {
-						limit = {
-							has_character_flag = we_are_evil_assasinator
+				70 = { 	
+					random_realm_character = { 
+						limit = { 
+							has_character_flag = we_are_evil_assasinator  
 							prisoner = no
 						}
-						imprison = yes
+						imprison = yes 
 						clr_character_flag = we_are_evil_assasinator
 					}
 				}
 				30 = {
-					random_realm_character = {
+					random_realm_character = { 
 						limit = {
-							has_character_flag = we_are_evil_assasinator
+							has_character_flag = we_are_evil_assasinator 
 							prisoner = no
 						}
 						clr_character_flag = we_are_evil_assasinator
@@ -3627,25 +3627,25 @@ character_event = {
 			}
 		}
 		if = {
-		 	limit = {
+		 	limit = { 
 		 		realm_intrigue = 9
-		 		NOT = { realm_intrigue = 16 }
+		 		NOT = { realm_intrigue = 16 } 
 		 	}
 			random_list = {
-				50 = {
-					random_realm_character = {
-						limit = {
-							has_character_flag = we_are_evil_assasinator
+				50 = { 	
+					random_realm_character = { 
+						limit = { 
+							has_character_flag = we_are_evil_assasinator  
 							prisoner = no
 						}
-						imprison = yes
+						imprison = yes 
 						clr_character_flag = we_are_evil_assasinator
 					}
 				}
 				50 = {
-					random_realm_character = {
-						limit = {
-							has_character_flag = we_are_evil_assasinator
+					random_realm_character = { 
+						limit = { 
+							has_character_flag = we_are_evil_assasinator 
 							prisoner = no
 						}
 						clr_character_flag = we_are_evil_assasinator
@@ -3654,31 +3654,31 @@ character_event = {
 			}
 		}
 		if = {
-		 	limit = {
+		 	limit = { 
 		 		NOT = { realm_intrigue = 9 }
 		 	}
 			random_list = {
-				30 = {
-					random_realm_character = {
-						limit = {
-							has_character_flag = we_are_evil_assasinator
+				30 = { 	
+					random_realm_character = { 
+						limit = { 
+							has_character_flag = we_are_evil_assasinator  
 							prisoner = no
 						}
-						imprison = yes
+						imprison = yes 
 						clr_character_flag = we_are_evil_assasinator
 					}
 				}
 				70 = {
-					random_realm_character = {
-						limit = {
-							has_character_flag = we_are_evil_assasinator
+					random_realm_character = { 
+						limit = { 
+							has_character_flag = we_are_evil_assasinator  
 							prisoner = no
 						}
 						clr_character_flag = we_are_evil_assasinator
 					}
 				}
 			}
-		}
+		}		
 	}
 	option = {
 		name = "EVTOPTD40021"	 # do nothing
@@ -3693,10 +3693,10 @@ character_event = {
 			who = FROM
 			modifier = not_supportive_liege
 			years = 2
-		}
-		hidden_tooltip = { FROM = { character_event = { id = 40025 days = 3 random = 5  } } }
+		}		
+		hidden_tooltip = { FROM = { character_event = { id = 40025 days = 3 random = 5  } } }		
 		piety = -10
-		random_realm_character = {
+		random_realm_character = { 
 			limit = { has_character_flag = we_are_evil_assasinator  }
 			clr_character_flag = we_are_evil_assasinator
 		}
@@ -3708,9 +3708,9 @@ character_event = {
 	id = 40022
 	desc = "EVTDESC40022"
 	picture = GFX_evt_emissary
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA40022"	 # ok
 		prestige = -10
@@ -3726,9 +3726,9 @@ character_event = {
 	id = 40023
 	desc = "EVTDESC40023"
 	picture = GFX_evt_emissary
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 
 	option = {
 		name = "EVTOPTA40023"	 # ok
@@ -3740,9 +3740,9 @@ character_event = {
 	id = 40024
 	desc = "EVTDESC40024"
 	picture = GFX_evt_emissary
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA40024"	 # ok
 		prestige = 5
@@ -3753,9 +3753,9 @@ character_event = {
 	id = 40025
 	desc = "EVTDESC40025"
 	picture = GFX_evt_emissary
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA40025"	 # ok
 		prestige = -5
@@ -3766,9 +3766,9 @@ character_event = {
 	id = 40026
 	desc = "EVTDESC40026"
 	picture = GFX_evt_scandal
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA40026"
 		if = {
@@ -3804,12 +3804,12 @@ narrative_event = {
 	title = "EVTNAME200"
 	desc = "EVTDESC200"
 	picture = GFX_evt_crusaders
-
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
 	hide_new = yes
-
+	
 	trigger = {
 		can_call_crusade = yes
 		ROOT = { religion_group = christian }
@@ -3817,7 +3817,7 @@ narrative_event = {
 			religion_group = muslim
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA200" # Deus Vult!
 		trigger = { religion = ROOT }
@@ -3861,12 +3861,12 @@ narrative_event = {
 	title = "EVTNAME200"
 	desc = "EVTDESC201"
 	picture = GFX_evt_crusaders
-
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
 	hide_new = yes
-
+	
 	trigger = {
 		can_call_crusade = yes
 		ROOT = { religion_group = christian }
@@ -3875,7 +3875,7 @@ narrative_event = {
 			NOT = { religion_group = christian }
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA200" # Deus Vult!
 		trigger = { religion = ROOT }
@@ -3919,12 +3919,12 @@ narrative_event = {
 	title = EVTNAME200
 	desc = EVTDESC321
 	picture = GFX_evt_crusaders
-
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
 	hide_new = yes
-
+	
 	trigger = {
 		can_call_crusade = yes
 		ROOT = { religion_group = christian }
@@ -3932,7 +3932,7 @@ narrative_event = {
 			religion_group = christian
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA200" # Deus Vult!
 		trigger = { religion = ROOT }
@@ -3976,12 +3976,12 @@ narrative_event = {
 	title = "EVTNAME200"
 	desc = "EVTDESC320"
 	picture = GFX_evt_battle
-
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
-	hide_new = yes
-
+	hide_new = yes	
+	
 	trigger = {
 		can_call_crusade = yes
 		ROOT = { religion_group = muslim }
@@ -3989,7 +3989,7 @@ narrative_event = {
 			religion_group = christian
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA320" # Allahu Akhbar!
 		trigger = { religion = ROOT }
@@ -4033,12 +4033,12 @@ narrative_event = {
 	title = "EVTNAME200"
 	desc = "EVTDESC322"
 	picture = GFX_evt_battle
-
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
-	hide_new = yes
-
+	hide_new = yes	
+	
 	trigger = {
 		can_call_crusade = yes
 		ROOT = { religion_group = muslim }
@@ -4047,7 +4047,7 @@ narrative_event = {
 			NOT = { religion_group = christian }
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA320" # Allahu Akhbar!
 		trigger = { religion = ROOT }
@@ -4091,12 +4091,12 @@ narrative_event = {
 	title = "EVTNAME200"
 	desc = "EVTDESC323"
 	picture = GFX_evt_battle
-
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
-	hide_new = yes
-
+	hide_new = yes	
+	
 	trigger = {
 		can_call_crusade = yes
 		ROOT = { religion_group = muslim }
@@ -4104,7 +4104,7 @@ narrative_event = {
 			religion_group = muslim
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA320" # Allahu Akhbar!
 		trigger = { religion = ROOT }
@@ -4148,12 +4148,12 @@ narrative_event = {
 	title = "EVTNAME200"
 	desc = "EVTDESC324"
 	picture = GFX_evt_viking_battle_oldgods
-
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
-	hide_new = yes
-
+	hide_new = yes	
+	
 	trigger = {
 		can_call_crusade = yes
 		ROOT = { religion_group = pagan_group }
@@ -4161,7 +4161,7 @@ narrative_event = {
 			religion_group = christian
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA324" # For [God Name]!
 		trigger = { religion = ROOT }
@@ -4205,12 +4205,12 @@ narrative_event = {
 	title = "EVTNAME200"
 	desc = "EVTDESC325"
 	picture = GFX_evt_viking_battle_oldgods
-
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
-	hide_new = yes
-
+	hide_new = yes	
+	
 	trigger = {
 		can_call_crusade = yes
 		ROOT = { religion_group = pagan_group }
@@ -4218,7 +4218,7 @@ narrative_event = {
 			religion_group = muslim
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA324" # For [God Name]!
 		trigger = { religion = ROOT }
@@ -4262,12 +4262,12 @@ narrative_event = {
 	title = "EVTNAME200"
 	desc = "EVTDESC326"
 	picture = GFX_evt_viking_battle_oldgods
-
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
-	hide_new = yes
-
+	hide_new = yes	
+	
 	trigger = {
 		can_call_crusade = yes
 		ROOT = { religion_group = pagan_group }
@@ -4276,7 +4276,7 @@ narrative_event = {
 			NOT = { religion_group = christian }
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA324" # For [God Name]!
 		trigger = { religion = ROOT }
@@ -4314,7 +4314,7 @@ narrative_event = {
 diploresponse_event = {
 	id = 202
 	desc = "EVTDESC202"
-
+	
 	is_triggered_only = yes
 	major = no
 	is_friendly = yes
@@ -4332,7 +4332,7 @@ diploresponse_event = {
 diploresponse_event = {
 	id = 203
 	desc = "EVTDESC203"
-
+	
 	is_triggered_only = yes
 	major = no
 
@@ -5007,7 +5007,7 @@ diploresponse_event = {
 		OR = {
 			FROM = { independent = yes }
 			NOT = {
-				liege = {
+				liege = { 
 					OR = {
 						character = ROOT
 						character = FROM
@@ -5036,7 +5036,7 @@ diploresponse_event = {
 	trigger = {
 		ai = no
 		FROM = { independent = no }
-		liege = {
+		liege = { 
 			OR = {
 				character = ROOT
 				character = FROM
@@ -5273,15 +5273,18 @@ diploresponse_event = {
 # On-action event: Royal Marriage Aid Duty
 character_event = {
 	id = 500
-	desc = "EVTDESC500"
-	picture = "GFX_evt_marriage"
-
+	desc = EVTDESC500
+	picture = GFX_evt_marriage
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		NOT = { religion_group = muslim }
 		OR = {
-			NOT = { religion = zoroastrian }
+			AND = {
+				NOT = { religion = zoroastrian }
+				NOT = { religion = messalian }
+			}
 			NOT = { new_character = { is_close_relative = FROM } }
 		}
 		OR = {
@@ -5297,7 +5300,7 @@ character_event = {
 			}
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA500"
 		scaled_wealth = 0.5
@@ -5330,11 +5333,11 @@ character_event = {
 # On-action event: Zoroastrian Xwedodah marriage
 character_event = {
 	id = 501
-	desc = "EVTDESC501"
-	picture = "GFX_evt_marriage_zoroastrian"
-
+	desc = EVTDESC501
+	picture = GFX_evt_marriage_zoroastrian_group
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		religion = zoroastrian
 		new_character = { is_close_relative = FROM }
@@ -5351,7 +5354,7 @@ character_event = {
 			}
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTA500"
 		scaled_wealth = 0.5
@@ -5398,7 +5401,102 @@ character_event = {
 			limit = { tier = BARON }
 			prestige = 25
 		}
+		
+		if = {
+			limit = { tier = EMPEROR }
+			piety = 300
+		}
+		if = {
+			limit = { tier = KING }
+			piety = 200
+		}
+		if = {
+			limit = { tier = DUKE }
+			piety = 100
+		}
+		if = {
+			limit = { tier = COUNT }
+			piety = 50
+		}
+		if = {
+			limit = { tier = BARON }
+			piety = 25
+		}
+	}
+}
 
+# On-action event: Messalian close kin marriage
+character_event = {
+	id = 502
+	desc = EVTDESC502
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = messalian
+		new_character = { is_close_relative = FROM }
+		OR = {
+			FROM = { character = ROOT }
+			AND = {
+				FROM = {
+					dynasty = ROOT
+					is_primary_heir = ROOT
+				}
+				new_character = {
+					NOT = { character = ROOT }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA500
+		scaled_wealth = 0.5
+		if = {
+			limit = { tier = EMPEROR }
+			piety = 300
+		}
+		if = {
+			limit = { tier = KING }
+			piety = 200
+		}
+		if = {
+			limit = { tier = DUKE }
+			piety = 100
+		}
+		if = {
+			limit = { tier = COUNT }
+			piety = 50
+		}
+		if = {
+			limit = { tier = BARON }
+			piety = 25
+		}
+	}
+	option = {
+		name = EVTOPTB500
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 300
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 200
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 50
+		}
+		if = {
+			limit = { tier = BARON }
+			prestige = 25
+		}
+		
 		if = {
 			limit = { tier = EMPEROR }
 			piety = 300
@@ -5427,9 +5525,9 @@ character_event = {
 letter_event = {
 	id = 290
 	desc = "EVTDESC290"
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		ai = no
 	}
@@ -5438,7 +5536,7 @@ letter_event = {
 		name = "EVTOPTA290"
 		approve_law = FROM
 	}
-
+	
 	option = {
 		name = "EVTOPTB290"
 	}
@@ -5462,7 +5560,7 @@ letter_event = {
 		name = "EVTOPTA290"
 		approve_law = FROM
 	}
-
+	
 	option = {
 		name = "EVTOPTB290"
 	}
@@ -5472,9 +5570,9 @@ letter_event = {
 letter_event = {
 	id = 292
 	desc = "EVTDESC292"
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		ai = no
 		FROM = {
@@ -5488,7 +5586,7 @@ letter_event = {
 		name = "EVTOPTA290"
 		approve_law = FROM
 	}
-
+	
 	option = {
 		name = "EVTOPTB290"
 	}
@@ -5613,9 +5711,9 @@ province_event = {
 	desc = "EVTDESC600"
 	picture = GFX_evt_peasants
 	border = GFX_event_normal_frame_war
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		NOT = { has_dlc = "The Old Gods" }
 	}
@@ -5722,9 +5820,9 @@ character_event = {
 	id = 601
 	desc = "EVTDESC601"
 	picture = "GFX_evt_peasants"
-
+	
 	is_triggered_only = yes
-
+	
 	option = {
 		name = "EVTOPTA601"
 	}
@@ -5737,7 +5835,7 @@ character_event = {
 	id = 610
 	desc = "EVTDESC610"
 	picture = "GFX_evt_peasants"
-
+	
 	is_triggered_only = yes
 
 	option = {
@@ -5753,9 +5851,9 @@ character_event = {
 	id = 615
 	desc = "EVTDESC615"
 	picture = "GFX_evt_peasants"
-
+	
 	is_triggered_only = yes
-
+	
 	option = {
 		name = "EXCELLENT"
 	}
@@ -5763,30 +5861,30 @@ character_event = {
 
 # Crusade/Jihad Succeeds
 narrative_event = {
-
+	
 	# ROOT is the target title
 	# new_character is the Enemy
 	# FROM is the taker
-
+	
 	id = 620
 	title = "EVTNAME620"
 	desc = "EVTDESC620"
 	picture = "GFX_evt_battle"
 	border = "GFX_event_narrative_frame_religion"
-
+	
 	major = yes
-
+	
 	only_rulers = yes
-
+	
 	is_triggered_only = yes
-
+	
 	option = {
 		name = "EVTOPTA620"
 		trigger = {
 			religion_group = FROM
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTB620"
 		trigger = {
@@ -5803,19 +5901,19 @@ narrative_event = {
 	# ROOT is the target title
 	# new_character is the Enemy
 	# FROM is the Pope/Caliph
-
+	
 	id = 621
 	title = "EVTNAME621"
 	desc = "EVTDESC621"
 	picture = "GFX_evt_battle"
 	border = "GFX_event_narrative_frame_religion"
-
+	
 	major = yes
-
+	
 	only_rulers = yes
-
+	
 	is_triggered_only = yes
-
+	
 	option = {
 		name = "EVTOPTA621"
 		trigger = {
@@ -5824,7 +5922,7 @@ narrative_event = {
 			}
 		}
 	}
-
+	
 	option = {
 		name = "EVTOPTB621"
 		trigger = {
@@ -5841,11 +5939,11 @@ narrative_event = {
 character_event = {
 	id = 650
 	desc = "NotShown"
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	hide_window = yes
-
+	
 	immediate = {
 		if = {
 			limit = {
@@ -5871,9 +5969,9 @@ character_event = {
 	id = 660
 	desc = "EVTDESC660"
 	picture = GFX_evt_scandal
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	immediate = {
 		hidden_tooltip = {
 			spouse = {
@@ -5891,9 +5989,9 @@ character_event = {
 			mother = {
 				character_event = { id = 661 }
 			}
-		}
+		}	
 	}
-
+	
 	option = {
 		name = "EVTOPTA660"
 		opinion = {
@@ -5908,9 +6006,9 @@ character_event = {
 	id = 661
 	desc = "EVTDESC661"
 	picture = GFX_evt_scandal
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA661"
 		opinion = {
@@ -5925,9 +6023,9 @@ character_event = {
 	id = 662
 	desc = "EVTDESC662"
 	picture = GFX_evt_scandal
-
-	is_triggered_only = yes
-
+	
+	is_triggered_only = yes 
+	
 	option = {
 		name = "EVTOPTA662"
 		opinion = {
@@ -5936,7 +6034,7 @@ character_event = {
 			months = 1200
 		}
 		hidden_tooltip = {
-			opinion = {
+			opinion = {	
 				who = FROM
 				modifier = opinion_abducted_spouse
 				months = 1200
@@ -5950,15 +6048,15 @@ narrative_event = {
 	title = "EVTNAME670"
 	desc = "EVTDESC670"
 	picture = GFX_evt_heretic
-	border = "GFX_event_narrative_frame_religion"
-
+	border = "GFX_event_narrative_frame_religion"	
+	
 	is_triggered_only = yes
 	major = yes
 	show_ROOT = yes
 	hide_new = yes
-
+	
 	only_rulers = yes
-
+	
 	immediate = {
 		if = {
 			limit = { ai = no }
@@ -6060,9 +6158,9 @@ narrative_event = {
 				trait = content
 			}
 		}
-
+		
 		religion = ROOT
-
+		
 		hidden_tooltip = {
 			any_courtier = {
 				limit = {
@@ -6093,6 +6191,10 @@ narrative_event = {
 		}
 		ai_chance = {
 			factor = 50
+			#modifier = {
+			#	factor = 0
+			#	has_landed_title = d_jomsvikings
+			#}
 		}
 		tooltip = { religion = THIS }
 	}

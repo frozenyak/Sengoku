@@ -2176,7 +2176,7 @@ character_event = {
 					is_alive = yes
 					religion_group = muslim
 					NOT = {
-						lover = {
+						any_lover = {
 							character = PREVPREV
 						}
 					}
@@ -2219,7 +2219,7 @@ character_event = {
 					spouse = {
 						is_alive = yes
 						NOT = {
-							lover = {
+							any_lover = {
 								character = PREVPREV
 							}
 						}
@@ -2259,7 +2259,7 @@ character_event = {
 					spouse = {
 						is_alive = yes
 						NOT = {
-							lover = {
+							any_lover = {
 								character = PREVPREV
 							}
 						}
@@ -2981,7 +2981,7 @@ character_event = {
 				days = 1
 				tooltip = "EVTTOOLTIPC105044"
 			}
-			lover = {
+			random_lover = {
 				random = {
 					chance = 30
 					add_trait = wounded

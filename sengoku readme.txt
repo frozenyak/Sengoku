@@ -30,6 +30,25 @@ No Mongols
 *************
 * Changelog *
 *************
+2.10
+	compatibility for 2.1
+	fix bugs
+	
+	neko new interface icons for char stats
+	neko reformating character files for readability
+	asian women can now be stewards, not spymasters
+	made all ashikaga shinto
+	
+	inheritance laws
+		counts and above now start with primogeniture
+		asians cannot pick/plot feudal elective
+		
+	brought religions more in line with vanilla
+		can designate heirs
+		changed max_wives to max_concubines
+		no short reign opinion modifier
+		added holy sites: Watarai, Izumo, Saeki, Mie
+	
 2.04
 	some bug fixes, also thanks to nekoxidion
 	kanto war by default, nekoxidion
