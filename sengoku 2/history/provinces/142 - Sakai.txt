@@ -11,5 +11,5 @@ b_sakai_city = city
 
 #building=inn
 #Misc
-religion = buddhism
+religion = pure_land_buddhism #buddhism
 culture = japanese

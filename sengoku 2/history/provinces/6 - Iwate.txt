@@ -10,5 +10,5 @@ b_iwate_city = city
 #b_iwate_temple = temple
 
 #Misc
-religion = buddhism
+religion = pure_land_buddhism #buddhism
 culture = japanese

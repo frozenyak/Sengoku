@@ -2,7 +2,7 @@
 	name="Masachika"
 	dynasty=39
 	culture="japanese"
-	religion="buddhism"
+	religion=pure_land_buddhism #"buddhism"
 #	is_clan_leader = yes
 
 	diplomacy=3

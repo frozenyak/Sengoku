@@ -10,5 +10,5 @@ b_hakui_city = city
 #b_hakui_temple = temple
 
 #Misc
-religion = buddhism
+religion = pure_land_buddhism #buddhism
 culture = japanese

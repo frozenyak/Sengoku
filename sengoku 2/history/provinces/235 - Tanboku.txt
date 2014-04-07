@@ -10,5 +10,5 @@ b_tanboku_city = city
 #b_tanboku_temple = temple
 
 #Misc
-religion = buddhism
+religion = pure_land_buddhism #buddhism
 culture = japanese

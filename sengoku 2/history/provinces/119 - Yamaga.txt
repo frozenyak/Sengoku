@@ -10,5 +10,5 @@ b_yamaga_city = city
 #b_yamaga_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto #buddhism
 culture = japanese

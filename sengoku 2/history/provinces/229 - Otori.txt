@@ -12,7 +12,7 @@ b_otori_city = city
 #building=inn
 
 #Misc
-religion = buddhism
+religion = pure_land_buddhism #buddhism
 culture = japanese
 
 1551.4.9 = {

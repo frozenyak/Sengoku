@@ -10,5 +10,5 @@ b_niihari_city = city
 #b_niihari_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto #buddhism
 culture = japanese

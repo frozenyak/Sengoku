@@ -10,5 +10,5 @@ b_fuchi_city = city
 #b_fuchi_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto #buddhism
 culture = japanese

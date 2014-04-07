@@ -10,5 +10,5 @@ b_ono_city = city
 #b_ono_temple = temple
 
 #Misc
-religion = buddhism
+religion = pure_land_buddhism #buddhism
 culture = japanese

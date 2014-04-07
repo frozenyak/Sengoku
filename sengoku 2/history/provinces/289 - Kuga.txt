@@ -10,7 +10,7 @@ b_kuga_city = city
 #b_kuga_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto #buddhism
 culture = japanese
 
 1551.4.9 = {

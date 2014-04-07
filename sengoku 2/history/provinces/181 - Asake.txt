@@ -10,5 +10,5 @@ b_asake_city = city
 #b_asake_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto #buddhism
 culture = japanese

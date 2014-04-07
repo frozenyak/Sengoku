@@ -10,5 +10,5 @@ b_iwata_city = city
 #b_iwata_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto #buddhism
 culture = japanese

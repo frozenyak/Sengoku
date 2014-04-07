@@ -10,7 +10,7 @@ b_ubara_city = city
 #b_ubara_temple = temple
 
 #Misc
-religion = buddhism
+religion = pure_land_buddhism #buddhism
 culture = japanese
 
 1551.4.9 = {

@@ -10,5 +10,5 @@ b_kuwana_city = city
 #b_kuwana_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto #buddhism
 culture = japanese

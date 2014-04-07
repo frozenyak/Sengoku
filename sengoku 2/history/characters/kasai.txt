@@ -22,7 +22,7 @@
 	name="Nobutaka"
 	dynasty=12
 	culture="japanese"
-	religion="buddhism"
+	religion=pure_land_buddhism #"buddhism"
 	father=19
 
 	diplomacy=4

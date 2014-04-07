@@ -10,5 +10,5 @@ b_kunohe_city = city
 #b_kunohe_temple = temple
 
 #Misc
-religion = buddhism
+religion = pure_land_buddhism #buddhism
 culture = japanese

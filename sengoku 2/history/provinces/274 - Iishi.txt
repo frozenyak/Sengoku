@@ -10,5 +10,5 @@ b_iishi_city = city
 #b_iishi_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto #buddhism
 culture = japanese

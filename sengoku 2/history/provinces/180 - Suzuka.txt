@@ -10,5 +10,5 @@ b_suzuka_city = city
 #b_suzuka_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto #buddhism
 culture = japanese
