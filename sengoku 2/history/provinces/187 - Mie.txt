@@ -7,8 +7,8 @@ title = c_mie
 max_settlements = 3
 b_mie_castle = castle
 b_mie_city = city
-#b_mie_temple = temple
+b_mie_temple = temple
 
 #Misc
-religion = buddhism
+religion = shinto
 culture = japanese
