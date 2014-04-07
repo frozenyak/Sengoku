@@ -1,39 +1,41 @@
 866 = {
-name="Mitsuhide"
-dynasty=310culture = japanese
-religion = buddhism
-diplomacy = 14
-martial = 14
-intrigue = 12
-add_trait = charismatic_negotiator
-add_trait = quick
-add_trait = ambitious
-add_trait = deceitful
-add_trait = poet
+	name="Mitsuhide"
+	dynasty=310	culture="japanese"
+	religion="buddhism"
 
-1528.1.1={
-birth="1528.1.1"
+	diplomacy=14
+	martial=14
+	intrigue=12
+
+	trait="charismatic_negotiator"
+	trait="quick"
+	trait="ambitious"
+	trait="deceitful"
+	trait="poet"
+
+	1528.1.1 = {
+		birth="1528.1.1"
+	}
+	1587.7.2 = {
+		death="1587.7.2"
+	}
 }
-1587.7.2={
-death="1587.7.2"
-}
-} 
 
 1029 = {
 	name="Tama"
 	dynasty=310
-	female = yes	culture = japanese
-	religion = buddhism
-	father = 866
+	female=yes	culture="japanese"
+	religion="buddhism"
+	father=866
 
-	1563.1.1={
+	1563.1.1 = {
 		birth="1563.1.1"
 	}
 	1587.6.1 = {
-		religion = catholic
-		name = "Garasha"
+		religion="catholic"
+		name="Garasha"
 	}
-	1600.8.25={
+	1600.8.25 = {
 		death="1600.8.25"
 	}
-} 
+}

@@ -1,16 +1,17 @@
 825 = {
-name="Mototsuna"
-dynasty=303
-culture = japanese
-religion = buddhism
-diplomacy = 7  
-martial = 7
-intrigue = 8
+	name="Mototsuna"
+	dynasty=303
+	culture="japanese"
+	religion="buddhism"
 
-1549.1.1={
-birth="1549.1.1"
+	diplomacy=7
+	martial=7
+	intrigue=8
+
+	1549.1.1 = {
+		birth="1549.1.1"
+	}
+	1632.10.12 = {
+		death="1632.10.12"
+	}
 }
-1632.10.12={
-death="1632.10.12"
-}
-} 

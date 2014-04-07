@@ -1,69 +1,78 @@
 202 = {
-name="Sanetaka"
-dynasty=133
-culture = japanese
-religion = buddhism
-diplomacy = 4
-martial = 3
-intrigue = 3
-add_trait = flamboyant_schemer
-1430.1.1={
-	birth="1430.1.1"
+	name="Sanetaka"
+	dynasty=133
+	culture="japanese"
+	religion="buddhism"
+
+	diplomacy=4
+	martial=3
+	intrigue=3
+	trait="flamboyant_schemer"
+
+	1430.1.1 = {
+		birth="1430.1.1"
+	}
+	1500.1.1 = {
+		death="1500.1.1"
+	}
 }
-1500.1.1={
-	death="1500.1.1"
-}
-} 
+
 391 = {
-name="Akitaka"
-dynasty=133
-culture = japanese
-religion = buddhism
-diplomacy = 1
-martial = 0
-intrigue = 1
-add_trait = amateurish_plotter
-father=202
-1460.1.1={
-	birth="1460.1.1"
+	name="Akitaka"
+	dynasty=133
+	culture="japanese"
+	religion="buddhism"
+	father=202
+
+	diplomacy=1
+	martial=0
+	intrigue=1
+	trait="amateurish_plotter"
+
+	1460.1.1 = {
+		birth="1460.1.1"
+	}
+	1500.1.1 = {
+		death="1500.1.1"
+	}
 }
-1500.1.1={
-	death="1500.1.1"
-}
-} 
+
 928 = {
-name="Norishige"
-dynasty=133
-culture = japanese
-religion = buddhism
-diplomacy = 9
-martial = 8
-intrigue = 8
-add_trait = tough_soldier
+	name="Norishige"
+	dynasty=133
+	culture="japanese"
+	religion="buddhism"
 
-1517.1.1={
-birth="1517.1.1"
+	diplomacy=9
+	martial=8
+	intrigue=8
+	trait="tough_soldier"
+
+	1517.1.1 = {
+		birth="1517.1.1"
+	}
+	1575.6.29 = {
+		death="1575.6.29"
+	}
 }
-1575.6.29={
-death="1575.6.29"
-}
-} 
+
 929 = {
-name="Nobusada"
-dynasty=133
-culture = japanese
-religion = buddhism
-father=928
-diplomacy = 9
-martial = 9
-intrigue = 8
-add_trait = tough_soldier
-add_trait = brave
+	name="Nobusada"
+	dynasty=133
+	culture="japanese"
+	religion="buddhism"
+	father=928
 
-1540.1.1={
-birth="1540.1.1"
+	diplomacy=9
+	martial=9
+	intrigue=8
+	trait="tough_soldier"
+	trait="brave"
+
+	1540.1.1 = {
+		birth="1540.1.1"
+	}
+	1592.11.21 = {
+		death="1592.11.21"
+	}
 }
-1592.11.21={
-death="1592.11.21"
-}
-} 

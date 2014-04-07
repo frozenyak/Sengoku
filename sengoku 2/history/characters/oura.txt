@@ -1,41 +1,44 @@
 881 = {
-name="Tamenori"
-dynasty=312
-culture = japanese
-religion = buddhism
-diplomacy = 8
-martial = 7
-intrigue = 7
-add_trait = misguided_warrior
+	name="Tamenori"
+	dynasty=312
+	culture="japanese"
+	religion="buddhism"
 
-1520.1.1={
-birth="1520.1.1"
+	diplomacy=8
+	martial=7
+	intrigue=7
+	trait="misguided_warrior"
+
+	1520.1.1 = {
+		birth="1520.1.1"
+	}
+	1520.1.1 = {		employer=551
+	}
+	1567.1.1 = {
+		death="1567.1.1"
+	}
 }
-1520.1.1={employer=551
-}
-1567.1.1={
-death="1567.1.1"
-}
-} 
+
 882 = {
-name="Tamenobu"
-dynasty=312
-culture = japanese
-religion = buddhism
-father=881
-diplomacy = 11
-martial = 10
-intrigue = 11
-add_trait = intricate_webweaver
-add_trait = quick
-add_trait = ambitious
+	name="Tamenobu"
+	dynasty=312
+	culture="japanese"
+	religion="buddhism"
+	father=881
 
-1550.1.18={
-birth="1550.1.18"
+	diplomacy=11
+	martial=10
+	intrigue=11
+	trait="intricate_webweaver"
+	trait="quick"
+	trait="ambitious"
+
+	1550.1.18 = {
+		birth="1550.1.18"
+	}
+	1550.1.18 = {		employer=551
+	}
+	1608.1.22 = {
+		death="1608.1.22"
+	}
 }
-1550.1.18={employer=551
-}
-1608.1.22={
-death="1608.1.22"
-}
-} 

@@ -1,52 +1,58 @@
 168 = {
-name="Motoshige"
-dynasty=99
-culture = japanese
-religion = buddhism
-diplomacy = 4
-martial = 6
-intrigue = 4
-#add_trait = painter
-add_trait = charismatic_negotiator
-1419.5.27={
-	birth="1419.5.27"
+	name="Motoshige"
+	dynasty=99
+	culture="japanese"
+	religion="buddhism"
+
+	diplomacy=4
+	martial=6
+	intrigue=4
+	#trait="painter"
+	trait="charismatic_negotiator"
+
+	1419.5.27 = {
+		birth="1419.5.27"
+	}
+	1480.4.15 = {
+		death="1480.4.15"
+	}
 }
-1480.4.15={
-	death="1480.4.15"
-}
-} 
+
 424 = {
-name="Motomune"
-dynasty=99
-culture = japanese
-religion = buddhism
-diplomacy = 3
-martial = 4
-intrigue = 3
-add_trait = naive_appeaser
-father=168
-1452.6.17={
-	birth="1452.6.17"
+	name="Motomune"
+	dynasty=99
+	culture="japanese"
+	religion="buddhism"
+	father=168
+
+	diplomacy=3
+	martial=4
+	intrigue=3
+	trait="naive_appeaser"
+
+	1452.6.17 = {
+		birth="1452.6.17"
+	}
+	1512.8.23 = {
+		death="1512.8.23"
+	}
 }
-1512.8.23={
-	death="1512.8.23"
-}
-} 
+
 754 = {
-name="Motonari"
-dynasty=99
-culture = japanese
-religion = buddhism
+	name="Motonari"
+	dynasty=99
+	culture="japanese"
+	religion="buddhism"
 
-diplomacy = 10
-martial = 9
-intrigue = 6
-add_trait = misguided_warrior
+	diplomacy=10
+	martial=9
+	intrigue=6
+	trait="misguided_warrior"
 
-1516.1.1={
-birth="1516.1.1"
+	1516.1.1 = {
+		birth="1516.1.1"
+	}
+	1575.1.1 = {
+		death="1575.1.1"
+	}
 }
-1575.1.1={
-death="1575.1.1"
-}
-} 

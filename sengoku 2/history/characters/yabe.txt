@@ -1,16 +1,18 @@
 240 = {
-name="Sadatoshi"
-dynasty=171
-culture = japanese
-religion = buddhism
-diplomacy = 4
-intrigue = 2
-martial = 5
-add_trait = amateurish_plotter
-1441.5.8={
-	birth="1441.5.8"
+	name="Sadatoshi"
+	dynasty=171
+	culture="japanese"
+	religion="buddhism"
+
+	diplomacy=4
+	intrigue=2
+	martial=5
+	trait="amateurish_plotter"
+
+	1441.5.8 = {
+		birth="1441.5.8"
+	}
+	1489.8.26 = {
+		death="1489.8.26"
+	}
 }
-1489.8.26={
-	death="1489.8.26"
-}
-} 
