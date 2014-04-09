@@ -399,7 +399,10 @@ e_japan = {
 			c_shiga = {
 				b_shiga_castle = {  }
 				b_shiga_city = { }
-				b_shiga_temple = { }
+				b_shiga_temple = {
+					holy_site = buddhism
+					holy_site = pure_land_buddhism
+				}
 				color = { 140 168 128 }
 			}
 			c_takashima = {
@@ -452,7 +455,10 @@ e_japan = {
 			c_kii = {
 				b_kii_castle = {  }
 				b_kii_city = { }
-				b_kii_temple = { }
+				b_kii_temple = {
+					holy_site = buddhism
+					holy_site = pure_land_buddhism
+				}
 				color = { 132 155 192 }
 			}
 			c_kuse = {
@@ -798,8 +804,6 @@ e_japan = {
 				b_izumo_city = { }
 				b_izumo_temple = { 
 					holy_site = shinto
-					holy_site = buddhism
-					holy_site = pure_land_buddhism
 				}
 				color = { 160 124 18 }
 			}
@@ -1068,8 +1072,6 @@ e_japan = {
 				b_saeki_city = { }
 				b_saeki_temple = { 
 					holy_site = shinto
-					holy_site = buddhism
-					holy_site = pure_land_buddhism
 				}
 				b_hiroshima = { }
 				color = { 96 44 23 }
@@ -1334,7 +1336,10 @@ e_japan = {
 			c_kamakura = {
 				b_kamakura_castle = {  }
 				b_kamakura_city = { }
-				b_kamakura_temple = { }
+				b_kamakura_temple = {
+					holy_site = buddhism
+					holy_site = pure_land_buddhism
+				}
 				color = { 149 192 36 }
 			}
 			c_aiko = {
@@ -2132,8 +2137,6 @@ e_japan = {
 				b_mie_city = { }
 				b_mie_temple = { 
 					holy_site = shinto
-					holy_site = buddhism
-					holy_site = pure_land_buddhism
 				}
 				color = { 68 34 32 }
 			}
@@ -2142,8 +2145,6 @@ e_japan = {
 				b_watarai_city = { }
 				b_watarai_temple = { 
 					holy_site = shinto
-					holy_site = buddhism
-					holy_site = pure_land_buddhism
 				}
 				color = { 60 163 64 }
 			}

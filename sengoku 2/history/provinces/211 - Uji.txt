@@ -12,7 +12,7 @@ b_uji_temple = temple
 #building=inn
 #building=marketplace
 #Misc
-religion = shinto #shinto #buddhism
+religion = buddhism
 culture = japanese
 
 1551.4.9 = {

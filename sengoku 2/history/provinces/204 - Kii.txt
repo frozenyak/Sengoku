@@ -7,10 +7,10 @@ title = c_kii
 max_settlements = 3
 b_kii_castle = castle
 b_kii_city = city
-#b_kii_temple = temple
+b_kii_temple = temple
 
 #Misc
-religion = shinto #buddhism
+religion = buddhism
 culture = japanese
 
 1551.4.9 = {

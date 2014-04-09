@@ -917,7 +917,7 @@ b_awa_temple;Awa-ji;Awa-ji;Awa-ji;;Awa-ji;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 b_kamakura_castle;Kamakura-jo;Kamakura-jo;Kamakura-jo;;Kamakura-jo;;;;;;;;;x
 b_kamakura_city;Kamakura-cho;Kamakura-cho;Kamakura-cho;;Kamakura-cho;;;;;;;;;x
-b_kamakura_temple;Kamakura-ji;Kamakura-ji;Kamakura-ji;;Kamakura-ji;;;;;;;;;x
+b_kamakura_temple;Kotoku-in;Kotoku-in;Kotoku-in;;Kotoku-in;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 b_aiko_castle;Aiko-jo;Aiko-jo;Aiko-jo;;Aiko-jo;;;;;;;;;x
 b_aiko_city;Aiko-cho;Aiko-cho;Aiko-cho;;Aiko-cho;;;;;;;;;x
@@ -1245,7 +1245,7 @@ b_sakata_temple;Sakata-ji;Sakata-ji;Sakata-ji;;Sakata-ji;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 b_shiga_castle;Shiga-jo;Shiga-jo;Shiga-jo;;Shiga-jo;;;;;;;;;x
 b_shiga_city;Shiga-cho;Shiga-cho;Shiga-cho;;Shiga-cho;;;;;;;;;x
-b_shiga_temple;Shiga-ji;Shiga-ji;Shiga-ji;;Shiga-ji;;;;;;;;;x
+b_shiga_temple;Enryaku-ji;Enryaku-ji;Enryaku-ji;;Enryaku-ji;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 b_takashima_castle;Takashima-jo;Takashima-jo;Takashima-jo;;Takashima-jo;;;;;;;;;x
 b_takashima_city;Takashima-cho;Takashima-cho;Takashima-cho;;Takashima-cho;;;;;;;;;x
@@ -1281,7 +1281,7 @@ b_kuwana_temple;Kuwana-ji;Kuwana-ji;Kuwana-ji;;Kuwana-ji;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 b_mie_castle;Mie-jo;Mie-jo;Mie-jo;;Mie-jo;;;;;;;;;x
 b_mie_city;Mie-cho;Mie-cho;Mie-cho;;Mie-cho;;;;;;;;;x
-b_mie_temple;Tsubaki Jingu;Mie-ji;Mie-ji;;Mie-ji;;;;;;;;;x
+b_mie_temple;Tsubaki Jingu;Tsubaki Jingu;Tsubaki Jingu;;Tsubaki Jingu;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 b_watarai_castle;Watarai-jo;Watarai-jo;Watarai-jo;;Watarai-jo;;;;;;;;;x
 b_watarai_city;Watarai-cho;Watarai-cho;Watarai-cho;;Watarai-cho;;;;;;;;;x
@@ -1350,7 +1350,7 @@ b_chrysanthemum_throne;Chrysanthemum Throne;Trône du chrysanthème;Chrysanthemen 
 ######;#;#;#;;#;;;;;;;;;x
 b_kii_castle;Kii-jo;Kii-jo;Kii-jo;;Kii-jo;;;;;;;;;x
 b_kii_city;Kii-cho;Kii-cho;Kii-cho;;Kii-cho;;;;;;;;;x
-b_kii_temple;Kii-ji;Kii-ji;Kii-ji;;Kii-ji;;;;;;;;;x
+b_kii_temple;Kiyomizu-dera;Kiyomizu-dera;Kiyomizu-dera;;Kiyomizu-dera;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 b_kuse_castle;Kuse-jo;Kuse-jo;Kuse-jo;;Kuse-jo;;;;;;;;;x
 b_kuse_city;Kuse-cho;Kuse-cho;Kuse-cho;;Kuse-cho;;;;;;;;;x

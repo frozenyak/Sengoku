@@ -34,20 +34,30 @@ No Mongols
 	compatibility for 2.1
 	fix bugs
 	
-	neko new interface icons for char stats
-	neko reformating character files for readability
+	nekoxidion new interface icons for char stats
+	nekoxidion reformating character files for readability
 	asian women can now be stewards, not spymasters
-	made all ashikaga shinto
-	
+	made ashikaga shinto
+	added tall trait
+	ambitions:
+		buddhist ambitions from roj added
+		non-jap/showa now want to become emperor, non-showa jap shogun
+		
+	age based skill/ferility/health changes:
+		0-15:	-1 all stats
+		16-29:	-1 all stats, +1 health, +0.1 fertility
+		50-69:	-1 health, -0.1 fertility, -1 martial, +1 learning
+		70+:	-3 health, -0.5 fertility, -5 martial, +3 learning
+		
 	inheritance laws
 		counts and above now start with primogeniture
-		asians cannot pick/plot feudal elective
+		asians cannot pick/plot feudal elective, go for tanistry instead
 		
 	brought religions more in line with vanilla
-		can designate heirs
-		changed max_wives to max_concubines
+		india dlc: can designate heirs
+		norse dlc: changed max_wives to max_concubines
 		no short reign opinion modifier
-		added holy sites: Watarai, Izumo, Saeki, Mie
+		added holy sites
 	
 2.04
 	some bug fixes, also thanks to nekoxidion

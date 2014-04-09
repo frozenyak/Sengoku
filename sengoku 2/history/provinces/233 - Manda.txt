@@ -1,4 +1,4 @@
-pure_land_buddhism #buddhism# 233 - Manda
+# 233 - Manda
 
 # Kokujin Title
 title = c_manda

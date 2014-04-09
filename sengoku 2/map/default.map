@@ -17,7 +17,7 @@ static = "static.txt"
 sea_zones = { 362 389 }
 
 ocean_region = {
-	sea_zones = { }
+	sea_zones = { 1 }
 }
 
 # Define which indices in trees.bmp palette which should count as trees for automatic terrain assignment
