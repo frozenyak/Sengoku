@@ -63,14 +63,14 @@ NDiplomacy = {
 	MAX_PREP_INV_ATTACKER_HOLDINGS = 40,		-- The attacker must have fewer Holdings than this in the realm (disallow Prepared Invasions for rulers who are already very powerful)
 	PREP_INV_REQ_PRESTIGE = 1000,				-- Need to have this much Prestige to prepare an invasion
 	BASE_REVOLT_CHANCE_MOD = 500,				-- Pre Old Gods rebel spawn chance modifier (fires on_rebel_revolt) : lower means fewer revolts. MUST NOT BE ZERO.
-	TOG_REVOLT_CHANCE_MOD = 200,				-- Old Gods rebel spawn chance modifier (fires on_rebel_revolt) : lower means fewer revolts. MUST NOT BE ZERO.
+	TOG_REVOLT_CHANCE_MOD = 200,				-- Old Gods rebel spawn chance modifier (fires on_rebel_revolt) : lower means fewer revolts. MUST NOT BE ZERO. 
 	JAIN_LIEGE_OPINION_BONUS = 30,				-- Jain Lieges Get Vassal Opinion Bonus
 	MAX_DIPLO_DISTANCE = 700,					-- Most diplomacy is disallowed if two rulers are too distant
 	MAX_DIPLO_DISTANCE_SAME_RELIGION = 100,		-- Bonus to max diplo distance for being of the same religion
 	MAX_DIPLO_DISTANCE_SAME_RELIGION_GROUP = 0, -- Bonus to max diplo distance for being of the same religion group
 	MAX_DIPLO_DISTANCE_SAME_CULTURE = 100, 		-- Bonus to max diplo distance for being of the same culture
 	MAX_DIPLO_DISTANCE_SAME_CULTURE_GROUP = 100, -- Bonus to max diplo distance for being of the same culture group
-
+	
 	IMPRISON_CHARACTER_INTERACTION_MONEY = 0,
 	IMPRISON_CHARACTER_INTERACTION_PIETY = 10,
 	IMPRISON_CHARACTER_INTERACTION_PRESTIGE = 0,
@@ -1163,8 +1163,8 @@ NRulerDesigner =
 	BASE_AGE = 16,
 	BASE_FERTILITY = 0.5,
 	BASE_HEALTH = 5.0,
-	COST_ATTRIB = 1.0,
-	COST_SON = 5.0,
+	COST_ATTRIB = 2.0,
+	COST_SON = 3.0,
 	COST_DAUGHTER = 2.0,
 	COST_MARRIED = 2.0,
 	COST_FERTILITY = 20.0,
@@ -1172,19 +1172,27 @@ NRulerDesigner =
 	COST_MONTHLY_PRESTIGE = 10.0,
 	COST_MONTHLY_PIETY = 20.0,
 	COST_MONTHLY_WEALTH = 10.0,
+	COST_GLOBAL_TAX = 50.0,
 	COST_CHURCH_OPINION = 0.5,
 	COST_SPOUCE_OPINION = 0.5,
 	COST_SEXAPPEAL_OPINION = 0.5,
 	COST_DYNASTY_OPINION = 0.5,
 	COST_VASSAL_OPINION = 1.0,
-	COST_LIEGE_OPINION = -0.5,
+	COST_LIEGE_OPINION = 0.5,
 	COST_INFIDEL_OPINION = 0.5,
 	COST_OPPOSITE_TRAIT_OPINION = 0.5,
 	COST_SAME_TRAIT_OPINION = 0.5,
 	COST_SAME_RELIGION_OPINION = 0.5,
-	COST_AMBITION_OPINION = -0.25,
+	COST_AMBITION_OPINION = 0.20,
 	COST_GENERAL_OPINION = 2.0,
-	MAX_AGE = 50,
-},
+	COST_MUSLIM_OPINION = 0.5,
+	COST_JEWISH_OPINION = 0.5,
+	COST_CHRISTIAN_OPINION = 0.5,
+    COST_ZOROASTRIAN_OPINION = 0.5,
+	COST_MORALE_OFFENCE = 100.0,
+	COST_MORALE_DEFENCE = 100.0,
+	COST_DEFENCE = 100.0,
+	MAX_AGE = 50
+}
 
 }

@@ -103,6 +103,7 @@ character_event = {
 		NOT = { religion_group = taoic_group }
 		NOT = { religion = cathar }
 		NOT = { religion = bogomilist }
+		NOT = { religion_group = indian_group }
 		trait = vegetarian
 	}
 
@@ -137,6 +138,7 @@ character_event = {
 			religion_group = taoic_group
 			religion = cathar
 			religion = bogomilist
+			religion_group = indian_group
 		}
 		NOT = { trait = vegetarian }
 		NOT = { has_character_flag = not_vegetarian_sect }
@@ -697,7 +699,10 @@ character_event = {
 			NOT = { trait = incapable }
 			NOT = { trait = zealous }
 			NOT = { trait = kind }
-			religion_group = taoic_group
+			OR = {
+				religion_group = taoic_group
+				religion_group = indian_group
+			}
 			OR = {
 				trait = gregarious
 				trait = hedonist
@@ -1700,7 +1705,10 @@ character_event = {
 			NOT = { trait = incapable }
 			NOT = { has_character_flag = converted_to_vegetarianism }
 			is_adult = yes
-			religion_group = taoic_group
+			OR = {
+				religion_group = taoic_group
+				religion_group = indian_group
+			}
 			OR = {
 				trait = zealous
 				trait = kind
@@ -1792,7 +1800,10 @@ character_event = {
 				NOT = { trait = incapable }
 				NOT = { has_character_flag = converted_to_vegetarianism }
 				is_adult = yes
-				religion_group = taoic_group
+				OR = {
+					religion_group = taoic_group
+					religion_group = indian_group
+				}
 				OR = {
 					trait = zealous
 					trait = kind
@@ -2245,6 +2256,7 @@ character_event = {
 			NOT = {
 				trait = zealous
 				religion_group = taoic_group
+				religion_group = indian_group
 			}
 		}
 	}

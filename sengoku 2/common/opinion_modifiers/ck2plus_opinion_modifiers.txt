@@ -157,11 +157,6 @@ opinion_ignored_succession_law = {
 	opinion = -25
 }
 
-opinion_former_lover = {
-	opinion = -10
-	months = 120
-}
-
 opinion_refused_convert = {
 	opinion = -50
 }

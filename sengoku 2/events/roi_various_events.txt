@@ -508,7 +508,10 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Rajas of India"
-		religion_group = indian_group
+		OR = {
+			religion_group = indian_group
+			religion_group = taoic_group
+		}
 		OR = {
 			father = {
 				ai = no
@@ -949,7 +952,7 @@ character_event = {
 		OR = {
 			religion = buddhist
 			religion = jain
-			religion_group = taoic_group
+			#religion_group = taoic_group
 		}
 	}
 	
@@ -1107,7 +1110,7 @@ character_event = {
 		OR = {
 			religion = hindu
 			religion = buddhist
-			religion_group = taoic_group
+			#religion_group = taoic_group
 		}
 	}
 	
@@ -1885,17 +1888,24 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_dlc = "Rajas of India"
 		religion_group = indian_group
-		NOT = { religion_authority = 0.4 }
+		NOT = { religion_authority = 0.3 }
 		any_demesne_province = {
 			religion = ROOT
+			NOT = { has_province_modifier = temple_corruption }
+			NOT = { has_province_modifier = local_death_cult }
+			NOT = { has_province_modifier = religious_tension }
 		}
 	}
 
 	immediate = {
 		random_demesne_province = {
-			limit = { religion = ROOT }
+			limit = {
+				religion = ROOT
+				NOT = { has_province_modifier = temple_corruption }
+				NOT = { has_province_modifier = local_death_cult }
+				NOT = { has_province_modifier = religious_tension }
+			}
 			province_event = { id = RoI.3501 }
 		}
 	}
@@ -1935,7 +1945,7 @@ character_event = {
 	}
 }
 
-# Temple corruption removed
+# Temple corruption removed - Indian
 character_event = {
 	id = RoI.3506
 
@@ -1944,9 +1954,8 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_dlc = "Rajas of India"
 		religion_group = indian_group
-		religion_authority = 0.75
+		religion_authority = 0.5
 		any_demesne_province = {
 			religion = ROOT
 			has_province_modifier = temple_corruption
@@ -2004,17 +2013,24 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_dlc = "Rajas of India"
 		religion_group = indian_group
-		NOT = { religion_authority = 0.5 }
+		NOT = { religion_authority = 0.3 }
 		any_demesne_province = {
 			religion = ROOT
+			NOT = { has_province_modifier = temple_corruption }
+			NOT = { has_province_modifier = local_death_cult }
+			NOT = { has_province_modifier = religious_tension }
 		}
 	}
 
 	immediate = {
 		random_demesne_province = {
-			limit = { religion = ROOT }
+			limit = {
+				religion = ROOT
+				NOT = { has_province_modifier = temple_corruption }
+				NOT = { has_province_modifier = local_death_cult }
+				NOT = { has_province_modifier = religious_tension }
+			}
 			province_event = { id = RoI.3511 }
 		}
 	}
@@ -2054,7 +2070,7 @@ character_event = {
 	}
 }
 
-# Local death cult removed
+# Local death cult removed - Indian
 character_event = {
 	id = RoI.3516
 
@@ -2063,9 +2079,8 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_dlc = "Rajas of India"
 		religion_group = indian_group
-		religion_authority = 0.75
+		religion_authority = 0.5
 		any_demesne_province = {
 			religion = ROOT
 			has_province_modifier = local_death_cult
@@ -2114,7 +2129,7 @@ character_event = {
 	}
 }
 
-# Religious unrest
+# Religious tensions
 character_event = {
 	id = RoI.3530
 
@@ -2123,17 +2138,24 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_dlc = "Rajas of India"
 		religion_group = indian_group
-		NOT = { religion_authority = 0.4 }
+		NOT = { religion_authority = 0.3 }
 		any_demesne_province = {
 			religion = ROOT
+			NOT = { has_province_modifier = temple_corruption }
+			NOT = { has_province_modifier = local_death_cult }
+			NOT = { has_province_modifier = religious_tension }
 		}
 	}
 
 	immediate = {
 		random_demesne_province = {
-			limit = { religion = ROOT }
+			limit = {
+				religion = ROOT
+				NOT = { has_province_modifier = temple_corruption }
+				NOT = { has_province_modifier = local_death_cult }
+				NOT = { has_province_modifier = religious_tension }
+			}
 			province_event = { id = RoI.3531 }
 		}
 	}
@@ -2166,72 +2188,72 @@ character_event = {
 		name = EVTOPTA_RoI_3535
 		FROM = {
 			add_province_modifier = {
-				name = religious_unrest
-				duration = -1
+				name = religious_tension
+				duration = 730
 			}
 		}
 	}
 }
 
 # Religious unrest removed
-character_event = {
-	id = RoI.3536
-
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "Rajas of India"
-		religion_group = indian_group
-		religion_authority = 0.75
-		any_demesne_province = {
-			religion = ROOT
-			has_province_modifier = religious_unrest
-		}
-	}
-
-	immediate = {
-		random_demesne_province = {
-			limit = {
-				religion = ROOT
-				has_province_modifier = religious_unrest
-			}
-			province_event = { id = RoI.3537 }
-		}
-	}
-}
+#character_event = {
+#	id = RoI.3536
+#
+#	hide_window = yes
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_dlc = "Rajas of India"
+#		religion_group = indian_group
+#		religion_authority = 0.5
+#		any_demesne_province = {
+#			religion = ROOT
+#			has_province_modifier = religious_tension
+#		}
+#	}
+#
+#	immediate = {
+#		random_demesne_province = {
+#			limit = {
+#				religion = ROOT
+#				has_province_modifier = religious_tension
+#			}
+#			province_event = { id = RoI.3537 }
+#		}
+#	}
+#}
 
 # Province bounce event
-province_event = {
-	id = RoI.3537
+#province_event = {
+#	id = RoI.3537
+#
+#	hide_window = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		FROM = {
+#			character_event = { id = RoI.3539 }
+#		}
+#	}
+#}
 
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		FROM = {
-			character_event = { id = RoI.3539 }
-		}
-	}
-}
-
-character_event = {
-	id = RoI.3539
-	desc = EVTDESC_RoI_3539
-	picture = GFX_evt_india_temple
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = {
-		name = EVTOPTA_RoI_3539
-		FROM = {
-			remove_province_modifier = religious_unrest
-		}
-	}
-}
+#character_event = {
+#	id = RoI.3539
+#	desc = EVTDESC_RoI_3539
+#	picture = GFX_evt_india_temple
+#	border = GFX_event_normal_frame_religion
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = EVTOPTA_RoI_3539
+#		FROM = {
+#			remove_province_modifier = religious_tension
+#		}
+#	}
+#}
 
 # Province converts to other religion!
 character_event = {
@@ -2244,12 +2266,12 @@ character_event = {
 	trigger = {
 		has_dlc = "Rajas of India"
 		religion_group = indian_group
-		NOT = { religion_authority = 0.4 }
+		NOT = { religion_authority = 0.3 }
 		any_independent_ruler = {
 			any_realm_province = {
 				religion_group = indian_group
 				NOT = { religion = ROOT }
-				religion_authority = 0.6
+				religion_authority = 0.7
 			}
 		}
 		any_demesne_province = {
@@ -2354,5 +2376,47 @@ character_event = {
 	}
 }
 
+# Temple corruption removed - non-Indian
+province_event = {
+	id = RoI.3550
 
+	hide_window = yes
+	
+	trigger = {
+		has_province_modifier = temple_corruption
+		owner = {
+			NOT = { religion_group = indian_group }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		remove_province_modifier = temple_corruption
+	}
+}
+
+# Local death cult removed - non-Indian
+province_event = {
+	id = RoI.3551
+
+	hide_window = yes
+	
+	trigger = {
+		has_province_modifier = local_death_cult
+		owner = {
+			NOT = { religion_group = indian_group }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		remove_province_modifier = local_death_cult
+	}
+}
 

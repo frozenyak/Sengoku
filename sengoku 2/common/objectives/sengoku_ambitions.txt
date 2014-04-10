@@ -20,7 +20,7 @@ obj_become_emperor = {
 		}	
 		NOT = { has_character_flag = obj_increase_title_3 }
 		OR = {
-			has_trait = showa
+			trait = showa
 			NOT = { culture = japanese }
 		}
 	}
@@ -66,7 +66,7 @@ obj_become_shogun = {
 		}	
 		NOT = { has_character_flag = obj_increase_title_3 }
 		culture = japanese
-		NOT = { has_trait = showa }
+		NOT = { trait = showa }
 	}
 	chance = {
 		factor = 0

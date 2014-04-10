@@ -24,11 +24,14 @@ go_player = {
 	
 	potential = {
 		culture_group = asian
+		is_female = no
 	}
 	
 	intrigue = 1
 	
 	same_opinion = 20
+	
+	ai_rationality = 10
 }
 
 calligraphist = {
@@ -36,9 +39,29 @@ calligraphist = {
 	
 	potential = {
 		culture_group = asian
+		is_female = no
 	}
 	
-	diplomacy = 1
+	#diplomacy = 1
+	stewardship = 1
 	
 	same_opinion = 20
+	
+	ai_rationality = 10
 }
+
+# buddhist_monk = {
+	# potential = {
+		# is_ruler = no
+		# is_female = no
+	# }
+	
+	# monthly_character_piety = 0.3
+	# same_religion_opinion = 10
+	
+	# religious = yes # Lost immediately on religion change
+	# cannot_marry = yes
+	# cannot_inherit = yes
+	# customizer = no
+	# random = no
+# }

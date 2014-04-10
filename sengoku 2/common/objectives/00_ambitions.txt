@@ -950,11 +950,7 @@ obj_get_married = {
 	}
 	chance = {
 		factor = 100
-		
-		modifier = {
-			factor = 0.1
-			trait = chaste
-		}
+
 		modifier = {
 			factor = 0.5
 			trait = shy
@@ -1049,11 +1045,7 @@ obj_marry_ruler = {
 	}
 	chance = {
 		factor = 100
-		
-		modifier = {
-			factor = 0.1
-			trait = chaste
-		}
+
 		modifier = {
 			factor = 1.5
 			trait = midas_touched
@@ -1249,6 +1241,7 @@ obj_wants_landed_title = {
 		is_ruler = no
 		NOT = { trait = incapable }
 		NOT = { trait = eunuch }
+		NOT = { has_minor_title = title_guru }
 		liege = {
 			is_feudal = yes
 			is_close_relative = ROOT

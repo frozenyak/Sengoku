@@ -761,6 +761,7 @@ character_event = {
 		any_courtier = {
 			has_job_title = job_marshal
 		}
+		NOT = { trait = vegetarian }
 	}
 
 	immediate = {

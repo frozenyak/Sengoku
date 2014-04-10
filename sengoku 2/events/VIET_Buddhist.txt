@@ -1029,10 +1029,11 @@ narrative_event = {
 		clr_character_flag = going_on_meditation_retreat
 		clr_character_flag = novice_buddhist_retreater
 		clr_character_flag = experienced_buddhist_retreater
-		# add_character_modifier = {
-			# name = participated_in_meditation_retreat
-			# duration = 365
-		# }
+		clr_character_flag = do_not_disturb
+		add_character_modifier = {
+			name = participated_in_meditation_retreat
+			duration = 365
+		}
 	}
 }
 
@@ -1073,10 +1074,11 @@ narrative_event = {
 		clr_character_flag = going_on_meditation_retreat
 		clr_character_flag = novice_buddhist_retreater
 		clr_character_flag = experienced_buddhist_retreater
-		# add_character_modifier = {
-			# name = participated_in_meditation_retreat
-			# duration = 365
-		# }
+		clr_character_flag = do_not_disturb
+		add_character_modifier = {
+			name = participated_in_meditation_retreat
+			duration = 365
+		}
 	}
 }
 
@@ -1117,10 +1119,11 @@ narrative_event = {
 		clr_character_flag = going_on_meditation_retreat
 		clr_character_flag = novice_buddhist_retreater
 		clr_character_flag = experienced_buddhist_retreater
-		# add_character_modifier = {
-			# name = participated_in_meditation_retreat
-			# duration = 365
-		# }
+		clr_character_flag = do_not_disturb
+		add_character_modifier = {
+			name = participated_in_meditation_retreat
+			duration = 365
+		}
 	}
 }
 
@@ -1162,10 +1165,11 @@ narrative_event = {
 		clr_character_flag = going_on_meditation_retreat
 		clr_character_flag = novice_buddhist_retreater
 		clr_character_flag = experienced_buddhist_retreater
-		# add_character_modifier = {
-			# name = participated_in_meditation_retreat
-			# duration = 365
-		# }
+		clr_character_flag = do_not_disturb
+		add_character_modifier = {
+			name = participated_in_meditation_retreat
+			duration = 365
+		}
 	}
 }
 
@@ -1205,10 +1209,11 @@ narrative_event = {
 		clr_character_flag = going_on_meditation_retreat
 		clr_character_flag = novice_buddhist_retreater
 		clr_character_flag = experienced_buddhist_retreater
-		# add_character_modifier = {
-			# name = participated_in_meditation_retreat
-			# duration = 365
-		# }
+		clr_character_flag = do_not_disturb
+		add_character_modifier = {
+			name = participated_in_meditation_retreat
+			duration = 365
+		}
 	}
 }
 

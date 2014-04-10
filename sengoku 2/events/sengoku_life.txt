@@ -99,14 +99,24 @@ character_event = {
 	prisoner = no
 	
 	trigger = {
+		#culture_group = asian
+		location = {
+			county = {
+				OR = {
+					empire = { title = e_japan }
+					empire = { title = e_shogun }
+				}
+			}
+		}
 		in_command = no
 		NOT = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = LE_ST
+			has_character_modifier = aspiring_go_player
+			has_character_modifier = aspiring_calligraphist
+			trait = slow
+			trait = inbred
 		}
-		culture_group = asian
 	}
 	
 	immediate = {
@@ -114,18 +124,18 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 260
+		months = 500 #360
 		
 		modifier = {
 			factor = 0.2
 			trait = ambitious
 		}
 		modifier = {
-			factor = 2
+			factor = 2.0
 			trait = content
 		}
 		modifier = {
-			factor = 1.3
+			factor = 1.5
 			trait = naive_appeaser
 		}
 		modifier = {
@@ -139,6 +149,30 @@ character_event = {
 		modifier = {
 			factor = 0.4
 			trait = charismatic_negotiator
+		}
+		modifier = {
+			factor = 2.0
+			trait = wroth
+		}
+		modifier = {
+			factor = 2.0
+			trait = gregarious
+		}
+		modifier = {
+			factor = 2.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.75
+			intrigue = 10
+		}
+		modifier = {
+			factor = 1.3
+			trait = misguided_warrior
+		}
+		modifier = {
+			factor = 1.2
+			trait = tough_soldier
 		}
 	}
 	
@@ -201,8 +235,12 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTBSENGOKU_LIFE.12"
-		prestige = 5
+		#prestige = 5
 		clr_character_flag = LE_ST
+		add_character_modifier = {
+			name = aspiring_calligraphist
+			duration = 365
+		}
 	}
 }
 
@@ -220,8 +258,12 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTBSENGOKU_LIFE.13"
-		prestige = 5
+		#prestige = 5
 		clr_character_flag = LE_ST
+		add_character_modifier = {
+			name = aspiring_go_player
+			duration = 365
+		}
 	}
 }
 

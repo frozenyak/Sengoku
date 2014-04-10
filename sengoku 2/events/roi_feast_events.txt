@@ -1006,27 +1006,27 @@ character_event = {
 				has_character_modifier = holding_diwali_feast
 				religion = hindu
 			}
-			character_event = { id = RoI.1171 days = 10 } # Hindu
+			character_event = { id = RoI.1171 } # Hindu
 		}
 		if = {
 			limit = {
 				has_character_modifier = holding_diwali_feast
 				religion = buddhist
 			}
-			character_event = { id = RoI.1173 days = 10 } # Buddhist
+			character_event = { id = RoI.1173 } # Buddhist
 		}
 		if = {
 			limit = {
 				has_character_modifier = holding_diwali_feast
 				religion = jain
 			}
-			character_event = { id = RoI.1175 days = 10 } # Jain
+			character_event = { id = RoI.1175 } # Jain
 		}
 		if = {
 			limit = {
 				has_character_modifier = holding_kali_puja_feast
 			}
-			character_event = { id = RoI.1177 days = 10 } # Kali Puja
+			character_event = { id = RoI.1177 } # Kali Puja
 		}
 	}
 }
@@ -1217,6 +1217,26 @@ character_event = {
 		hidden_tooltip = { character_event = { id = RoI.1181 } }
 		prestige = 10
 	}
+	option = {
+		name = EVTOPTC_RoI_1178 # 3 - Massive ritual blood sacrifice of animals (elephants, massive)
+		#trigger = {
+		#	capital_scope = {
+		#		OR = {
+		#			empire = { title = e_rajastan }
+		#			empire = { title = e_bengal }
+		#			empire = { title = e_deccan }
+		#			empire = { title = e_persia }
+		#		}
+		#	}
+		#}
+		any_vassal = {
+			limit = { has_character_flag = attending_diwali_feast }
+			hidden_tooltip = { narrative_event = { id = RoI.1184 } }
+		}
+		hidden_tooltip = { narrative_event = { id = RoI.1183 } }
+		wealth = -10
+		prestige = 30
+	}
 }
 
 # Prisoner to be sacrificed gets this bridging event
@@ -1265,6 +1285,12 @@ character_event = {
 	option = {
 		name = EVTOPTA_RoI_1179 # 
 		piety = 30
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
 		if = {
 			limit = {
 				NOT = { has_character_flag = achievement_kali_maaa }

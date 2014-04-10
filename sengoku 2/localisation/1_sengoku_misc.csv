@@ -7,6 +7,7 @@ ainu;Ainu;Aïnous;Ainu;;Ainu;;;;;;;;;x
 ryukyuan;Ryukyuan;Ryukyuan;Ryukyuan;;Ryukyuan;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 RETTYPE_CUL_JAP;Samurai;Samouraï;Samurai;;Samurái;;;;;;;;;x
+health_retreat_condition;Is healthy enough;Est en assez bonne santé;Ist gesund genug;;Es lo suficientemente saludable;;;;;;;;;x
 ######;#;#;#;;#;;;;;;;;;x
 obj_become_emperor_title;Become Emperor;Devenir Empereur;Kaiser werden;;;;;;;;;;;x;
 obj_become_emperor_desc;[This.GetTitledFirstName] aspires to the lofty heights of an Emperorship.;[This.GetTitledFirstName] aspire à ceindre la couronne impériale.;[This.GetTitledFirstName] strebt nach den hohen Ehren eines Kaiserreiches.;;;;;;;;;;;x;

@@ -2063,6 +2063,9 @@ character_event = {
 		any_lover = {
 			is_female = yes
 			is_married = yes
+			spouse = {
+				NOT = { character = ROOT }
+			}
 		}
 	}
 	
@@ -2092,7 +2095,10 @@ character_event = {
 		random_lover = {
 			limit = {
 				is_female = yes
-				is_married = yes 
+				is_married = yes
+				spouse = {
+					NOT = { character = ROOT }
+				}
 			}
 			character_event = {
 				id = 64046
@@ -2124,7 +2130,10 @@ character_event = {
 			random_lover = {
 				limit = {
 					is_female = yes
-					is_married = yes 
+					is_married = yes
+					spouse = {
+						NOT = { character = ROOT }
+					}
 				}
 				character_event = {
 					id = 64046
@@ -2489,6 +2498,7 @@ character_event = {
 		}
 		fertility = 0.5
 		any_lover = {
+			is_female = yes
 			NOT = {
 				spouse = {
 					character = ROOT
@@ -2524,6 +2534,7 @@ character_event = {
 			piety = -10
 			random_lover = {
 				limit = {
+					is_female = yes
 					NOT = {
 						spouse = {
 							character = ROOT
@@ -2566,6 +2577,7 @@ character_event = {
 			piety = -10
 			random_lover = {
 				limit = {
+					is_female = yes
 					NOT = {
 						spouse = {
 							character = ROOT
@@ -2606,6 +2618,7 @@ character_event = {
 			25 = {
 				random_lover = {
 					limit = {
+						is_female = yes
 						NOT = {
 							spouse = {
 								character = ROOT
@@ -2629,6 +2642,7 @@ character_event = {
 		name = "EVTOPTD64080" #Spend the time working instead
 		random_lover = {
 			limit = {
+				is_female = yes
 				NOT = {
 					spouse = {
 						character = ROOT
@@ -3040,6 +3054,7 @@ character_event = {
 		trait = stressed
 		fertility = 0.4
 		any_lover = {
+			is_female = yes
 			is_pregnant = no
 			fertility = 0.5
 			NOT = {
@@ -3065,6 +3080,7 @@ character_event = {
 		remove_trait = stressed
 		random_lover = {
 			limit = {
+				is_female = yes
 				is_pregnant = no
 				fertility = 0.5
 				NOT = {
@@ -3101,6 +3117,7 @@ character_event = {
 			25 = {
 				random_lover = {
 					limit = {
+						is_female = yes
 						is_pregnant = no
 						fertility = 0.5
 						NOT = {
@@ -3150,6 +3167,7 @@ character_event = {
 			25 = {
 				random_lover = {
 					limit = {
+						is_female = yes
 						is_pregnant = no
 						fertility = 0.5
 						NOT = {

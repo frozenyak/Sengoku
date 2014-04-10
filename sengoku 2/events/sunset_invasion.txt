@@ -877,6 +877,9 @@ province_event = {
 			#province_id = 4 # Kita
 			province_id = 361 # Tanegashima
 		}
+		owner = {
+			NOT = { religion = aztec }
+		}
 	}
 	
 	immediate = {

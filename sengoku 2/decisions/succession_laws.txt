@@ -606,6 +606,7 @@ gender_laws = {
 				OR = {
 					culture = basque
 					religion = cathar
+					religion = messalian
 				}
 			}
 		}

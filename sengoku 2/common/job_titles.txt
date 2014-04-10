@@ -227,6 +227,7 @@ job_spiritual = {
 						NOT = { religion = tengri_pagan_reformed}
 					}
 					religion = cathar
+					religion = bogomilist
 				}
 				OR = {
 					NOT = { religion = hindu }

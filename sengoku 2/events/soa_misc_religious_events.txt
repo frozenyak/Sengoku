@@ -1038,7 +1038,7 @@ character_event = {
 		spouse = {
 			impregnate = ROOT
 			add_trait = pregnant
-			}
+		}
 		if = {
 			limit = { NOT = { trait = zealous } }
 			add_trait = zealous

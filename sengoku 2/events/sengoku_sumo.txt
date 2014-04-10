@@ -17,14 +17,21 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	ai = no
+	min_age = 16
 	
 	trigger = {
-		culture = japanese
-		age = 16
+		#culture = japanese
 		in_command = no
 		NOT = { has_global_flag = sumo_scheme_ongoing }
 		war = no
-		#capital_scope = { culture = japanese }
+		location = {
+			county = {
+				OR = {
+					empire = { title = e_japan }
+					empire = { title = e_shogun }
+				}
+			}
+		}
 	}
 	
 	mean_time_to_happen = {

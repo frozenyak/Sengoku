@@ -13,7 +13,6 @@ New Taoic religion group with Buddhism, Amidism, and Shintoism
 Barely any women/marriages defined by default
 No ships, you can walk to and from every island
 Showa emperors have special trait that works similar to muslim sayyid
-Emperor head of Shinto faith (unplayable)
 No Mongols
 
 ****************
@@ -30,22 +29,29 @@ No Mongols
 *************
 * Changelog *
 *************
-2.10
-	compatibility for 2.1
+2.12
+	compatibility for 2.1.2
 	fix bugs
 	
 	nekoxidion new interface icons for char stats
 	nekoxidion reformating character files for readability
 	asian women can now be stewards, not spymasters
 	made ashikaga shinto
+	Emperor not head of Shinto faith for now
 	added tall trait
+	halved chance for jap to found/join indep factions under jap liege
+	vegetarians cannot go on hunts
+	tightened requirements for calligraphist/go player, should be a lot rarer
+	you can only go on retreats until you are master
+	
 	ambitions:
 		buddhist ambitions from roj added
 		non-jap/showa now want to become emperor, non-showa jap shogun
 		
 	age based skill/ferility/health changes:
 		0-15:	-1 all stats
-		16-29:	-1 all stats, +1 health, +0.1 fertility
+		16-19:	-1 all stats, +1 health, +0.1 fertility
+		20-29:	+1 health, +0.1 fertility
 		50-69:	-1 health, -0.1 fertility, -1 martial, +1 learning
 		70+:	-3 health, -0.5 fertility, -5 martial, +3 learning
 		
@@ -58,6 +64,7 @@ No Mongols
 		norse dlc: changed max_wives to max_concubines
 		no short reign opinion modifier
 		added holy sites
+		AI will only convert with high zeal
 	
 2.04
 	some bug fixes, also thanks to nekoxidion

@@ -225,8 +225,6 @@ lunatic = {
 	same_opinion = 10
 	
 	ai_rationality = -50
-	
-	cost = -10
 }
 possessed = {
 	is_health = yes
@@ -463,8 +461,6 @@ homosexual = {
 	vassal_opinion = -10
 	
 	fertility = -0.15
-	
-	cost = -10
 }
 
 #####################

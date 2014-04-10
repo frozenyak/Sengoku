@@ -28,14 +28,17 @@ vegetarian = {
 	#intrigue = -1	
 	
 	monthly_character_piety = 0.1 #0.4
-	#health = 0.2
-	same_religion_opinion = 10
-	same_opinion = 10
+	health = 0.1 #0.2
+	#same_religion_opinion = 5 #10
+	same_opinion = 5 #10
 }
 
 retreat_veteran = {
 	potential = {
-		religion_group = taoic_group
+		OR =  {
+			religion_group = taoic_group
+			religion = buddhist
+		}
 	}
 	opposites =  {
 		retreat_master
@@ -48,7 +51,10 @@ retreat_veteran = {
 
 retreat_master = {
 	potential = {
-		religion_group = taoic_group
+		OR =  {
+			religion_group = taoic_group
+			religion = buddhist
+		}
 	}
 	opposites =  {
 		retreat_veteran
@@ -61,7 +67,10 @@ retreat_master = {
 
 on_retreat = {
 	potential = {
-		religion_group = taoic_group
+		OR =  {
+			religion_group = taoic_group
+			religion = buddhist
+		}
 		NOT = { trait = retreat_veteran }
 		NOT = { trait = retreat_master }
 	}

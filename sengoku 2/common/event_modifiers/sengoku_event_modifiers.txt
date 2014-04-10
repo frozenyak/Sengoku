@@ -1,0 +1,14 @@
+aspiring_go_player = {
+	#monthly_character_prestige = 0.03
+	intrigue = 2
+	icon = 3
+}
+aspiring_calligraphist= {
+	#monthly_character_prestige = 0.03
+	stewardship = 2
+	icon = 3
+}
+aspiring_musician = {
+	monthly_character_piety = 0.03
+	icon = 3
+}

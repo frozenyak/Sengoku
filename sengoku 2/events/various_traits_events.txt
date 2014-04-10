@@ -1779,6 +1779,10 @@ character_event = {
 				trait = diligent
 			}
 		}
+		modifier = {
+			factor = 10
+			has_ambition = obj_buddhist_stop_drinking
+		}
 	}
 	
 	option = {
@@ -4609,10 +4613,17 @@ character_event = {
 	
 	weight_multiplier = {
 		factor = 1
+		modifier = {
+			factor = 10
+			has_ambition = obj_buddhist_temperance_food
+		}
 	}
 	
 	option = {
 		name = EVTOPTA65150 #Admission of fatness
+		trigger = {
+			NOT = { has_ambition = obj_buddhist_temperance_food }
+		}
 		random_list = {
 			50 = {
 			}
@@ -4631,6 +4642,18 @@ character_event = {
 						id = 65151 #Notify Remove Gluttonous
 					}
 				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTA65155 #Admission of fatness - Buddhist ambition
+		trigger = {
+			has_ambition = obj_buddhist_temperance_food
+		}
+		remove_trait = gluttonous
+		hidden_tooltip = {
+			character_event = {
+				id = 65151 #Notify Remove Gluttonous
 			}
 		}
 	}
@@ -4671,6 +4694,10 @@ character_event = {
 	
 	weight_multiplier = {
 		factor = 1
+		modifier = {
+			factor = 10
+			has_ambition = obj_buddhist_temperance_food
+		}
 	}
 	
 	option = {
@@ -4678,6 +4705,7 @@ character_event = {
 		trigger = {
 			NOT = { religion_group = muslim }
 			NOT = { religion_group = jewish_group }
+			NOT = { has_ambition = obj_buddhist_temperance_food }
 		}
 		random_list = {
 			55 = {
@@ -4697,6 +4725,18 @@ character_event = {
 						id = 65151 #Notify Remove Gluttonous
 					}
 				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTA65155 #No more food - Buddhist ambition
+		trigger = {
+			has_ambition = obj_buddhist_temperance_food
+		}
+		remove_trait = gluttonous
+		hidden_tooltip = {
+			character_event = {
+				id = 65151 #Notify Remove Gluttonous
 			}
 		}
 	}
